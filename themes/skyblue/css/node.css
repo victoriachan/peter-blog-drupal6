@@ -1,5 +1,11 @@
 /* Default node style */
 
+.node-content {
+  font-family: Garamond, "Times New Roman", Times, serif;
+  font-size:1.15em;
+  line-height:1.6em;
+}
+
 /* Image */
 .field-video,
 .field-first-image {
