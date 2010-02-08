@@ -1,0 +1,33 @@
+/* Default node style */
+
+/* Image */
+.field-video,
+.field-first-image {
+  width:auto;
+  display:inline;
+  float:left;
+  margin:0 30px 5px 0;
+}
+  .node .node-content img,
+  .field-first-image img {
+    border:1px solid #222;
+  }
+
+/* node content */
+.node blockquote {
+  min-height:30px;
+  margin:0 0 20px -20px;
+  padding:10px 30px 10px 100px;
+  background: #e5e5e5 url(../images/blockquote_left.png) no-repeat 0 0;
+  background: rgba(0, 0, 0, 0.1) url(../images/blockquote_left.png) no-repeat 0 0;
+  line-height:1.6em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing:0.01em;
+}
+.node .node-content blockquote p:last-of-type {
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.node .node-content h3 {
+  margin:30px 0 20px 0;
+}

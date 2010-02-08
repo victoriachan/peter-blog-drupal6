@@ -1,0 +1,78 @@
+/*
+ * LAYOUT STYLES
+ */
+ 
+body {
+  margin:0; 
+  padding:0;
+  background:#fff url(../images/sitebg_tile.jpg) repeat-y 0 0;
+}
+  #second-body{
+    width:100%;
+    background:url(../images/sitebg_top.jpg) no-repeat 0 0;
+  }
+  #top-bar{
+    width:100%;
+  }
+    #top-bar .inner{
+      margin:0 auto;
+      padding:0 10px 0 5px;
+      height:45px;
+      width:920px;
+      overflow:hidden;
+      position:relative;
+    }
+  #site-wrapper {
+    padding:0 0 0 5%;
+    margin: 0;
+    width:890px;
+    min-height:415px;
+  }
+  
+#main-wrapper {
+  width:880px;
+  overflow:hidden;
+  padding:0 10px 0 0;
+}
+  .primary-content {
+    width:590px; border:1px solid red;
+    float:left;
+    margin-bottom:20px;
+  }
+    .content-top {
+      width:650px;
+      padding:0 0 0 10px;
+      position:relative;
+    }
+    .page-content {
+    }
+      .node {
+        width:100%;
+      }
+        .node-content {
+          width:500px;
+          margin-left:70px;
+        }
+    
+  .secondary-content {
+    width:250px; border:1px solid red;
+    float:right;
+  }
+
+#content-bottom {
+  margin:0 auto 30px auto;
+  width:960px;
+}
+
+#footer {
+  z-index:3;
+  width:100%;
+  height:97px;
+  overflow:hidden;
+  bottom:0;
+}
+  #footer .inner{
+    margin:0 auto;
+    padding:0 10px;
+    width:920px;
+  }
