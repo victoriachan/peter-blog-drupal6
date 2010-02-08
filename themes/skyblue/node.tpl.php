@@ -72,7 +72,7 @@
 
   <?php print $picture; ?>
 
-  <?php if (!$page): ?>
+  <?php if ($page): ?>
     <h1 class="title"><?php print $title; ?></h1>
   <?php else: ?>
     <h2 class="title">

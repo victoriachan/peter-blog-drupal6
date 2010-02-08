@@ -34,7 +34,7 @@ body {
   padding:0 10px 0 0;
 }
   .primary-content {
-    width:590px; border:1px solid red;
+    width:590px;
     float:left;
     margin-bottom:20px;
   }
@@ -46,15 +46,15 @@ body {
     .page-content {
     }
       .node {
-        width:100%;
+        width:590px;
       }
         .node-content {
-          width:500px;
-          margin-left:70px;
+          width:470px;
+          padding:0 50px 0 70px;
         }
     
   .secondary-content {
-    width:250px; border:1px solid red;
+    width:250px;
     float:right;
   }
 

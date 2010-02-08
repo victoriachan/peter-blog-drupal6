@@ -1,9 +1,32 @@
 /* Default node style */
+.page-content {
+  padding:30px 0 0 0;
+}
+.node {
+  clear:both;
+  background:#fff;
+}
+  .node h1.title {
+    font-size:2.3em;
+    font-weight:normal;
+    text-shadow:none;
+    padding:20px 50px 10px 70px;
+    margin:0;
+  }
 
 .node-content {
   font-family: Garamond, "Times New Roman", Times, serif;
   font-size:1.2em;
   line-height:1.6em;
+}
+
+.post-date {
+  float:right;
+  font-size:1.3em;
+  color:#fff;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
+  margin:0;
+  padding:0 10px 5px 0;
 }
 
 /* Image */

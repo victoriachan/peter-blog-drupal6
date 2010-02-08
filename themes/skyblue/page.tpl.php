@@ -35,9 +35,11 @@
           
           <?php print $site_slogan ?>
           <?php print $mission ?>
-
-          <h1 class="title"><?php print $title; ?></h1>
-
+          
+          <?php if (!$node): ?>
+            <h1 class="title"><?php print $title; ?></h1>
+          <?php endif; ?>
+          
           <?php if ($help OR $messages OR $tabs): ?>
           <div id="admin-tabs-top">  
             <?php print $help ?>

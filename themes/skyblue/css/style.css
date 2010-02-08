@@ -61,17 +61,26 @@
   margin:0 10px;
   line-height:1em;
   }
-  
+
+/* Headings */
+h1.title {
+  text-shadow: 0 1px 3px rgba(16,97,127,0.4);
+}
+h2.title a {
+  text-decoration:none;
+  background-color:#000;
+  color:#fff;
+  padding:2px 5px;
+}
 
 /* Node taxonomy */
 .node .terms {
   clear:both;
   overflow:hidden;
   font-size:0.9em;
-  margin:20px 0 10px -10px;
+  margin:20px 0 10px 0;
   padding:3px 20px 5px 20px;
   line-height:normal;
-  width:630px;
   background-color: #ccc;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -318,9 +327,11 @@ body.user-edit #admin-tabs-top {
 }
 #admin-tabs-top ul.primary{
   border-bottom:0;
-  margin:0 0 0 20px;
+  margin:0 0 0 5px;
   padding:0;
   height:20px;
+  top:31px;
+  position:absolute;
 }
 #admin-tabs-top ul.primary li a{
   -moz-border-radius-topleft: 4px;

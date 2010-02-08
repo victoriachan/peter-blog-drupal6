@@ -34,24 +34,7 @@ function phptemplate_preprocess(&$vars, $hook) {
 }
 
 function phptemplate_preprocess_page(&$vars) {
-  
-  // Add css for node pages
-  if ($vars['node']) {
-    drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
-    drupal_add_css(path_to_theme() . '/css/comments.css', 'theme');
-  }
-  
-  // Add css for specific node types
-  if ($vars['node']->type == 'blog') {
-    drupal_add_css(path_to_theme() . '/css/node_blog.css', 'theme');
-  } elseif ($vars['node']->type == 'update') {
-    drupal_add_css(path_to_theme() . '/css/node_update.css', 'theme');
-  } elseif ($vars['node']->type == 'project') {
-    drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
-  } elseif ($vars['node']->type == 'zi') {
-    drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
-  }
-  
+    
   // Add css for search
   $array_q = explode('/', $_GET['q']);
   if ($array_q[0] == 'search') {
@@ -65,8 +48,27 @@ function phptemplate_preprocess_page(&$vars) {
 
 function phptemplate_preprocess_node(&$vars) {
   
-  // To access regions in nodes
-  $vars['node_bottom'] = theme('blocks', 'node_bottom');
+  if ($vars['page']) {
+    
+    // To access regions in nodes
+    $vars['node_bottom'] = theme('blocks', 'node_bottom');
+
+    // Add css for node pages
+    drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+    drupal_add_css(path_to_theme() . '/css/comments.css', 'theme');
+  
+    // Add css for specific node types
+    if ($vars['node']->type == 'blog') {
+      drupal_add_css(path_to_theme() . '/css/node_blog.css', 'theme');
+    } elseif ($vars['node']->type == 'update') {
+      drupal_add_css(path_to_theme() . '/css/node_update.css', 'theme');
+    } elseif ($vars['node']->type == 'project') {
+      drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
+    } elseif ($vars['node']->type == 'zi') {
+      drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
+    }
+    
+  }
   
   // Load node type-specific preprocess functions (if they exist)
   $function = 'phptemplate_preprocess_node'.'_'. $vars['node']->type;
