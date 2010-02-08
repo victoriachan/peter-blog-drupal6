@@ -1,5 +1,13 @@
 /* Default HTML element styles */
 
+@font-face {
+	font-family: 'NotethisRegular';
+	src: url('../fonts/Note_this.eot');
+	src: local('Note this Regular'), local('Notethis'), url('../fonts/Note_this.ttf') format('truetype');
+}
+/* font: 18px/27px 'NotethisRegular', Arial, sans-serif; */
+
+
 body
 {
   font-size: 80%;
@@ -19,7 +27,7 @@ html{
 }
 body, caption, th, td, input, textarea, select, option, legend, fieldset
 {
-	font-family: Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
+  font-family: Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
 }
 
 .code, .page-content pre, .page-content code {
@@ -180,7 +188,7 @@ dl { }
    */
 .default-link,
 a {
-	color:#D00D4F;
+  color:#D00D4F;
 }
   a:hover,
   a:focus {

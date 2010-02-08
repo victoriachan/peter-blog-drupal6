@@ -16,15 +16,11 @@
   <div id="top-bar"><div class="inner">
     <?php // print site name (h1 or div) ?>
     <<?php print $site_name_element; ?> id="site-name">
-      <?php print l(t($site_name), '', array(html=>true, attributes=>array('title' => t('home'), 'rel'=>'home'))); ?>
+      <?php print l("<span>P</span>eter's <span>W</span>ebsite", '', array(html=>true, attributes=>array('title' => t('home'), 'rel'=>'home'))); ?>
     </<?php print $site_name_element; ?>>
     
     <?php if ($top_bar): ?>
       <!-- REGION top_bar -->
       <?php print $top_bar; ?>
-    <?php endif; ?>    
-
-    <div class="home">
-      <?php print l(t('Home'), '', array(html=>true, attributes=>array('title' => t('Back to home'), 'rel'=>'home'))); ?>
-    </div>
+    <?php endif; ?>
   </div></div><!-- /#top-bar /.inner -->

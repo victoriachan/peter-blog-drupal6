@@ -16,17 +16,11 @@ body {
     min-height:600px;
     background:url(../images/sitebg_top.jpg) no-repeat 0 0;
   }
-  #top-bar{
-    width:100%;
+  #top-bar {
+    margin:0 0 0 5%;
+    padding: 0;
+    width:890px;    
   }
-    #top-bar .inner{
-      margin:0 auto;
-      padding:0 10px 0 5px;
-      height:45px;
-      width:920px;
-      overflow:hidden;
-      position:relative;
-    }
   #site-wrapper {
     padding:0 0 0 5%;
     margin: 0;

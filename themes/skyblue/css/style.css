@@ -2,82 +2,66 @@
 
 /* top bar */
 #site-name {
+  font-family: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
   margin:0;
   padding:0;
+  font-size:1.7em;
+  font-weight:normal;
+  line-height:1.1em;
   position:absolute;
-  right:0;
-  width:243px;
-  z-index:2;
+  bottom:5px;
+  left:0;
+  width:250px;
 }
-  #top-bar #site-name a {
-    text-indent:-1000px;
-    overflow:hidden;    
-    display:block;
-    text-decoration:none;
-    background:url(../images/sitetitle2.png) 0 2px no-repeat;
-    width:243px;
-    height:45px;
+  #site-name span {
+    font-size:1.6em;
   }
-    #top-bar #site-name a:hover{
-      filter:alpha(opacity=30);
-      -moz-opacity:0.3;
-      -khtml-opacity: 0.3;
-      opacity: 0.3;
-    }
+  #site-name a {
+    padding:0 10px;
+  }
+  #site-name a:hover {
+    color:#000;
+    color:rgba(0,0,0,0.5);
+  }
   
 #top-bar{
-  font-size:0.95em;
   color:#fff;
-  overflow:hidden;
+  height:55px;
+  position:relative;
 }
   #top-bar a{
     color:#fff;
     text-decoration:none;  
   }
     #top-bar a:hover{
-      color:#4d4d4d;
-      color:rgba(255,255,255,0.3);
+      color:#000;
+      color:rgba(0,0,0,0.5);
     }
-  #top-bar ul{
-    padding:0;
-    margin:0 0 -2px 0;
-    width:500px;
-    float:left;
-    position:absolute;
-    bottom:5px;
-    left:60px;
-  }    
+
+/* Primary link */
+#top-bar #block-menu-primary-links {
+  position:absolute;
+  right:0;
+  top:20px;
+  width:650px;
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
+  font-size:18px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+#top-bar ul.menu{
+  padding:0;
+  margin:0;
+  text-align:right;
+}    
   #top-bar li {
-    display:inline;
-    width:auto;
-    padding:0 5px 0 0;
-    margin:0 5px 0 0;
-    line-height:1em;
+  display:inline;
+  width:auto;
+  padding:0 5px;
+  margin:0 10px;
+  line-height:1em;
   }
-  #top-bar .home {
-    display:block;
-    width:45px;
-    height:46px;
-    float:left;
-  }
-    #top-bar .home span,
-    #top-bar .home a {
-      display:block;
-      width:45px;
-      height:46px;
-      overflow:hidden;
-      text-indent:-1000px;
-      text-decoration:none;
-      line-height:normal;
-      background:url(../images/home.png) 0 0 no-repeat;
-    }
-    #top-bar .home span,
-    #top-bar .home a:hover {
-      filter:alpha(opacity=30);
-      -moz-opacity:0.3;
-      -khtml-opacity: 0.3;
-      opacity: 0.3;
-    }
+  
 
 /* Node taxonomy */
 .node .terms {
