@@ -4,13 +4,17 @@
 }
 .node {
   clear:both;
-  background:#fff;
+  background:url(../images/notebook_bg.png) 0 0 repeat-y;
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+
 }
   .node h1.title {
     font-size:2.3em;
     font-weight:normal;
     text-shadow:none;
-    padding:20px 50px 10px 70px;
+    padding:20px 55px 10px 75px;
     margin:0;
   }
 
