@@ -7,7 +7,7 @@
       <div id="content-bottom" class="content-bottom"><div class="inner">
         <!-- REGION content_bottom -->
         <?php print $content_bottom; ?>
-      </div></div> <!-- /.content_bottom -->
+      </div></div> <!-- /.content-bottom -->
     <?php endif; ?> 
  
     <?php if ($footer || $footer_message): ?>
@@ -22,5 +22,5 @@
     <?php endif; ?>  
    
   <?php print $closure; ?>
-</div><!-- /second_body --></body>
+</div></div><!-- /third-body /second-body --></body>
 </html>

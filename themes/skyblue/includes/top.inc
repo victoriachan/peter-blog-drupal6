@@ -12,7 +12,7 @@
   <?php print $scripts; ?>
 </head>
 
-<body class="<?php print trim($body_classes); ?>"><div id="second-body">
+<body class="<?php print trim($body_classes); ?>"><div id="second-body"><div id="third-body">
   <div id="top-bar"><div class="inner">
     <?php // print site name (h1 or div) ?>
     <<?php print $site_name_element; ?> id="site-name">
@@ -27,4 +27,4 @@
     <div class="home">
       <?php print l(t('Home'), '', array(html=>true, attributes=>array('title' => t('Back to home'), 'rel'=>'home'))); ?>
     </div>
-  </div></div><!-- /#top_bar /.inner -->
+  </div></div><!-- /#top-bar /.inner -->

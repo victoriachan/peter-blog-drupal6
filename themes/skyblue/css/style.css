@@ -237,7 +237,7 @@
 /* Footer */
 
 #footer{
-  background:url(../images/sitebg_bottom.jpg) no-repeat 0 100%;
+  /* background:url(../images/sitebg_bottom.jpg) no-repeat 0 100%; */
   font-family: Georgia, "Times New Roman", Times, serif;
   color:#4d4d4d;
   color:rgba(255,255,255,0.3);
