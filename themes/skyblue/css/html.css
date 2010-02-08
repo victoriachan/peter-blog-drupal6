@@ -188,7 +188,8 @@ dl { }
    */
 .default-link,
 a {
-  color:#D00D4F;
+  color:#000;
+  text-decoration:underline;
 }
   a:hover,
   a:focus {
