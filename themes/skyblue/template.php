@@ -48,8 +48,8 @@ function phptemplate_preprocess_page(&$vars) {
     drupal_add_css(path_to_theme() . '/css/node_update.css', 'theme');
   } elseif ($vars['node']->type == 'project') {
     drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
-  } elseif ($vars['node']->type == 'tiantian') {
-    drupal_add_css(path_to_theme() . '/css/node_tiantian.css', 'theme');
+  } elseif ($vars['node']->type == 'zi') {
+    drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
   }
   
   // Add css for search
