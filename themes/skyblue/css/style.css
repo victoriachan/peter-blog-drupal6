@@ -36,7 +36,7 @@
   }
     #top-bar .active-trail a,
     #top-bar .active-trail:hover a:hover,
-    #top-bar .expanded:hover a.active:hover,
+    #top-bar .expanded:hover a:hover,
     #top-bar li a.active,
     #top-bar a:hover{
       color:#555;
@@ -75,8 +75,9 @@
   position:relative;
 }
   #top-bar .active-trail:hover a,
-  #top-bar .expanded:hover a.active {
+  #top-bar .expanded:hover a {
     text-shadow:none;
+    color:#777;
     background-color:#fff;
     background-color:rgba(255,255,255,0.9);
   }
@@ -99,8 +100,7 @@
     #top-bar .expanded ul.menu a {
       background-color:#fff;
       background-color:rgba(255,255,255,0.9);
-      color:#555;
-      color:rgba(0,0,0,0.5);
+      color:#777;
       line-height:normal;
       display:block;
       padding:5px 10px;
