@@ -34,6 +34,8 @@
     color:#fff;
     text-decoration:none;  
   }
+    #top-bar .active-trail a,
+    #top-bar .active-trail:hover a:hover,
     #top-bar .expanded:hover a.active:hover,
     #top-bar li a.active,
     #top-bar a:hover{
@@ -72,6 +74,7 @@
 #top-bar .expanded {
   position:relative;
 }
+  #top-bar .active-trail:hover a,
   #top-bar .expanded:hover a.active {
     text-shadow:0;
     background-color:#fff;
@@ -108,6 +111,7 @@
       background-color:#92BEE3;
       background-color:rgba(146, 190, 227,0.9);    
     }
+    
 
 /* Headings */
 h1.title {
