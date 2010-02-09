@@ -5,24 +5,24 @@
   font-family: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
   text-shadow: 0 0 3px rgba(0,0,0,0.2);
   margin:0;
-  padding:0;
+  padding:0 0 3px 0;
   font-size:1.7em;
   font-weight:normal;
   line-height:1.1em;
   position:absolute;
   bottom:5px;
   left:0;
-  width:250px;
+  min-width:150px;
 }
   #site-name span {
     font-size:1.6em;
   }
   #site-name a {
-    padding:0 10px;
-  }
-  #site-name a:hover {
-    color:#000;
-    color:rgba(0,0,0,0.5);
+    line-height:normal;
+    padding:3px 10px 0 10px;
+    height:30px;
+    display:block;
+    width:auto;
   }
   
 #top-bar{
@@ -34,9 +34,13 @@
     color:#fff;
     text-decoration:none;  
   }
+    #top-bar .expanded:hover a.active:hover,
+    #top-bar li a.active,
     #top-bar a:hover{
-      color:#000;
+      color:#555;
       color:rgba(0,0,0,0.5);
+      background-color:#92BEE3;
+      background-color:rgba(0,0,0,0.1);
     }
 
 /* Primary link */
@@ -57,10 +61,53 @@
   #top-bar li {
   display:inline;
   width:auto;
-  padding:0 5px;
+  padding:0;
   margin:0 10px;
   line-height:1em;
   }
+  #top-bar .block-menu a {
+    padding:0 8px;
+  }
+
+#top-bar .expanded {
+  position:relative;
+}
+  #top-bar .expanded:hover a.active {
+    text-shadow:0;
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
+  }
+  #top-bar .expanded ul.menu {
+    display:none;
+    width:250px;
+    margin:0;
+    padding:3px 0 0 0;
+    position:absolute;
+    z-index:3;
+    left:0;
+    text-align:left;
+    font-size:0.8em;
+  }
+  #top-bar .expanded ul.menu li {
+    display:block;
+    margin:0;
+    padding:1px 0 0 0;
+  }
+    #top-bar .expanded ul.menu a {
+      background-color:#fff;
+      background-color:rgba(255,255,255,0.9);
+      color:#555;
+      color:rgba(0,0,0,0.5);
+      line-height:normal;
+      display:block;
+      padding:5px 10px;
+      text-shadow:0;
+    }
+    #top-bar .expanded ul.menu a:hover {
+      color:#444;
+      background-color:#92BEE3;
+      background-color:rgba(146, 190, 227,0.9);    
+    }
 
 /* Headings */
 h1.title {
@@ -157,6 +204,9 @@ h2.title a {
     right:7px;
     bottom:3px;
   }
+
+/* Book nav */
+
 
 /* Pager */
 .pager {
