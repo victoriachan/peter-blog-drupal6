@@ -76,7 +76,7 @@
 }
   #top-bar .active-trail:hover a,
   #top-bar .expanded:hover a.active {
-    text-shadow:0;
+    text-shadow:none;
     background-color:#fff;
     background-color:rgba(255,255,255,0.9);
   }
@@ -104,7 +104,7 @@
       line-height:normal;
       display:block;
       padding:5px 10px;
-      text-shadow:0;
+      text-shadow:none;
     }
     #top-bar .expanded ul.menu a:hover {
       color:#444;
