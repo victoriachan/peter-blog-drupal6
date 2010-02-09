@@ -34,27 +34,27 @@ body {
   padding:0 10px 0 0;
 }
   .primary-content {
-    width:600px;
+    width:640px;
     float:left;
     margin-bottom:20px;
   }
     .content-top {
-      width:600px;
+      width:640px;
       padding:0 0 0 10px;
       position:relative;
     }
     .page-content {
     }
       .node {
-        width:600px;
+        width:640px;
       }
         .node-content {
-          width:470px;
-          padding:0 55px 0 75px;
+          width:500px;
+          padding:0 0 0 75px;
         }
     
   .secondary-content {
-    width:230px;
+    width:210px;
     float:right;
   }
 
