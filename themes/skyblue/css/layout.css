@@ -22,7 +22,7 @@ body {
     width:890px;    
   }
   #site-wrapper {
-    padding:0 0 0 5%;
+    padding:0 0 0 70px;
     margin: 0;
     width:890px;
     min-height:415px;
@@ -46,11 +46,11 @@ body {
     .page-content {
     }
       .node {
-        width:640px;
+        width:630px;
       }
         .node-content {
-          width:500px;
-          padding:0 0 0 75px;
+          width:490px;
+          padding:0 0 0 80px;
         }
     
   .secondary-content {

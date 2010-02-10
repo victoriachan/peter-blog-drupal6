@@ -14,8 +14,8 @@
     font-size:2.3em;
     font-weight:normal;
     text-shadow:none;
-    width:500px;
-    padding:20px 0 10px 75px;
+    width:490px;
+    padding:20px 0 10px 80px;
     margin:0;
   }
 
@@ -33,6 +33,17 @@
   margin:0;
   padding:0 10px 5px 0;
 }
+.page-content {
+  position:relative;
+}
+  .field-animal-picture {
+    position:absolute;
+    top:200px;
+    right:-253px;
+  }
+    .node .node-content .field-animal-picture img {
+      border:0;
+    }
 
 /* Image */
 .field-video,
