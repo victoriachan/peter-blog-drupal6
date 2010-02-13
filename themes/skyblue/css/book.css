@@ -21,6 +21,7 @@
       font-size:15px;
       line-height:normal;
       padding:0 10px;
+      display:block;
     }
       .book-navigation .page-links a:hover {
         text-decoration:underline;
@@ -49,6 +50,7 @@
         }
       .book-navigation .page-links li.right {
         text-align:right;
+        float:right;
       }
         .book-navigation .page-links li.right a {
           float:right;
