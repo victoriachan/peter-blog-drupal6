@@ -16,7 +16,7 @@
   <div id="top-bar"><div class="inner">
     <?php // print site name (h1 or div) ?>
     <<?php print $site_name_element; ?> id="site-name">
-      <?php print l("<span>P</span>eter's <span>W</span>ebsite", '', array(html=>true, attributes=>array('title' => t('Return to homepage'), 'rel'=>'home'))); ?>
+      <?php print l($site_name, '', array(html=>true, attributes=>array('title' => t('Return to homepage'), 'rel'=>'home'))); ?>
     </<?php print $site_name_element; ?>>
     
     <?php if ($top_bar): ?>

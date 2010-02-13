@@ -61,8 +61,9 @@ function phptemplate_preprocess_node(&$vars) {
     if ($vars['node']->type == 'blog') {
       drupal_add_css(path_to_theme() . '/css/node_blog.css', 'theme');
     } elseif ($vars['node']->type == 'update') {
-      drupal_add_css(path_to_theme() . '/css/node_update.css', 'theme');
+      drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
     } elseif ($vars['node']->type == 'project') {
+      drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
       drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
     } elseif ($vars['node']->type == 'zi') {
       drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');

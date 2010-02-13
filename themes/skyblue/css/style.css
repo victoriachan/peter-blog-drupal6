@@ -2,27 +2,25 @@
 
 /* top bar */
 #site-name {
-  font-family: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
-  text-shadow: 0 0 3px rgba(0,0,0,0.2);
   margin:0;
-  padding:0 0 3px 0;
-  font-size:1.7em;
-  font-weight:normal;
-  line-height:1.1em;
+  padding:0;
   position:absolute;
-  bottom:5px;
+  top:2px;
   left:0;
-  min-width:150px;
 }
-  #site-name span {
-    font-size:1.5em;
-  }
   #site-name a {
+    background:url(../images/title.png) 0 100% no-repeat;
     line-height:normal;
-    padding:3px 10px 0 10px;
     height:30px;
     display:block;
-    width:auto;
+    width:275px;
+    height:47px;
+    text-indent:-1000px;
+    overflow:hidden;
+  }
+  #top-bar #site-name a:hover {
+    background: url(../images/title.png) 0 0 no-repeat;
+    background-color: transparent;
   }
   
 #top-bar{
