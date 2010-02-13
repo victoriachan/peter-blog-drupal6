@@ -435,6 +435,7 @@ body.user-edit #admin-tabs-top {
   height:20px;
   top:31px;
   position:absolute;
+  z-index:2;
 }
 #admin-tabs-top ul.primary li a{
   -moz-border-radius-topleft: 4px;
