@@ -1,0 +1,9 @@
+/* Book style for Updates and Project pages */
+
+.book-navigation {
+  
+}
+  .book-navigation .menu {
+    border:0;
+    background-color:rgba(0,0,0,0.1);
+  }

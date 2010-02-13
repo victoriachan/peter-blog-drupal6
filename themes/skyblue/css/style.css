@@ -6,7 +6,7 @@
   padding:0;
   position:absolute;
   top:2px;
-  left:0;
+  left:10px;
 }
   #site-name a {
     background:url(../images/title.png) 0 100% no-repeat;
@@ -105,9 +105,8 @@
       text-shadow:none;
     }
     #top-bar .expanded ul.menu a:hover {
-      color:#444;
-      background-color:#92BEE3;
-      background-color:rgba(146, 190, 227,0.9);    
+      color:#fff;
+      background-color:#000;
     }
     
 
@@ -337,7 +336,6 @@ h2.title a {
   color:rgba(255,255,255,0.3);
   font-size:0.9em;
   letter-spacing:0.03em;
-  text-align:right;
 }
   #footer ul,
   #footer li,
@@ -350,7 +348,6 @@ h2.title a {
     margin:0;
     padding:0;
     display:inline;
-    float:right;
   }
   #footer #block-menu-menu-footer-links{
     float:left;

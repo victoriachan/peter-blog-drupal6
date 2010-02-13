@@ -10,6 +10,17 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <?php 
+    // Output CSS for Animal picture
+    if ($node->field_animal_right[0]['value'] || $node->field_animal_top[0]['value']):
+   ?>
+    <style type="text/css" media="screen">
+      .field-animal-picture {
+        <?php print $node->field_animal_right[0]['value']? 'right:'.$node->field_animal_right[0]['value'].'px;' : '';?>
+        <?php print $node->field_animal_top[0]['value']? 'top:'.$node->field_animal_top[0]['value'].'px;' : '';?>      
+      }
+    </style>
+   <?php endif; ?>
 </head>
 
 <body class="<?php print trim($body_classes); ?>"><div id="second-body"><div id="third-body">
