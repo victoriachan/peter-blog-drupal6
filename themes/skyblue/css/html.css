@@ -7,12 +7,21 @@
 }
 /* font: 18px/27px 'NotethisRegular', Arial, sans-serif; */
 
+@font-face {
+	font-family: 'LatinModernRoman10Regular';
+	src: url('../fonts/latin_modern_roman/lmroman10-regular.eot');
+	src: local('Latin Modern Roman 10 Regular'), local('LMRoman10-Regular'), url('../fonts/latin_modern_roman/lmroman10-regular.ttf') format('truetype');
+}
+/* font: 18px/27px 'LatinModernRoman10Regular', Arial, sans-serif; */
 
 body
 {
-  font-size: 80%;
+  font-size: 100%;
   color:#222;
 }
+  #second-body {
+    font-size:0.8em;
+  }
   #site-wrapper
   {
     font-size: 1em;

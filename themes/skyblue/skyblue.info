@@ -31,7 +31,7 @@ stylesheets[all][]    = css/layout.css
 stylesheets[all][]    = css/style.css
 stylesheets[all][]    = css/form.css
 stylesheets[print][]    = css/print.css
-ie stylesheets[ condition ][all][] = css/ie.css
+;ie stylesheets[ condition ][all][] = css/ie.css
 
 ;--------------------- javascript ------------------------------
 scripts[] = javascript/site.js

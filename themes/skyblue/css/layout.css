@@ -22,16 +22,16 @@ body {
     width:890px;    
   }
   #site-wrapper {
-    padding:0 0 0 70px;
+    padding:0 0 0 60px;
     margin: 0;
-    width:890px;
+    width:900px;
     min-height:415px;
   }
   
 #main-wrapper {
   width:880px;
   overflow:hidden;
-  padding:0 10px 0 0;
+  padding:0 20px 0 0;
 }
   .primary-content {
     width:640px;
@@ -46,15 +46,14 @@ body {
     .page-content {
     }
       .node {
-        width:630px;
+        width:490px;
+        padding:10px 35px 10px 80px;
       }
         .node-content {
-          width:490px;
-          padding:0 0 0 80px;
         }
     
   .secondary-content {
-    width:210px;
+    width:235px;
     float:right;
   }
 
