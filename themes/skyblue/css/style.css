@@ -409,7 +409,7 @@ dl .lightbox-processed:hover,
 body.user-edit #admin-tabs-top {
   height:54px;
 }
-#admin-tabs-top .messages{      /* TEMP */ display:none;
+#admin-tabs-top .messages{      /* TEMP */ display:block;
   padding:5px 10px 5px 20px;
   margin:10px 0;
   background-color:#b3b3b3;

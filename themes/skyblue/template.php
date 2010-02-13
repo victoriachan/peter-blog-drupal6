@@ -4,7 +4,7 @@
  * @file
  * template file for  subtheme
  */
- 
+
 function phptemplate_preprocess(&$vars, $hook) {
   if($hook == 'page') {
     // Add a 'page-node' class if this is a node that is rendered as page
@@ -12,21 +12,20 @@ function phptemplate_preprocess(&$vars, $hook) {
       $vars['body_classes'] .= ' page-node';
     }
     
-    //// Add Feed icon
-    //if($array_q[0] == 'geek'){
-    //  drupal_add_feed(url('geek/feed', array('absolute' => TRUE)), 'VictoriaC RSS | Geek');
-    //} elseif($array_q[0] == 'life') {
-    //  drupal_add_feed(url('life/feed', array('absolute' => TRUE)), 'VictoriaC RSS | Life');
-    //} elseif($array_q[0] == 'today') {
-    //  drupal_add_feed(url('today/feed', array('absolute' => TRUE)), 'VictoriaC RSS | Today');
-    //} elseif($array_q[0] == '漢字感じ') {
-    //  drupal_add_feed(url('漢字感じ/feed', array('absolute' => TRUE)), 'VictoriaC RSS | 漢字感じ');
-    //} else {
-    //  drupal_add_feed(url('feed', array('absolute' => TRUE)), 'VictoriaC RSS | All');
-    //}
-    //$vars['head'] = drupal_get_html_head();   // Refresh $head variable
-    //$vars['feed_icons'] = drupal_get_feeds();  // Refresh $feed_icons variable
-
+    // Add Feed icon
+    $array_q = explode('/', $_GET['q']);
+    if($array_q[0] == 'blog'){
+      drupal_add_feed(url('blog/rss.xml', array('absolute' => TRUE)));
+    } elseif($array_q[0] == 'projects') {
+      drupal_add_feed(url('projects/rss.xml', array('absolute' => TRUE)));
+    } elseif($array_q[0] == '字') {
+      drupal_add_feed(url('字/rss.xml', array('absolute' => TRUE)));
+    } else {
+      drupal_add_feed(url('rss.xml', array('absolute' => TRUE)));
+    }
+    
+    $vars['head'] = drupal_get_html_head();   // Refresh $head variable
+    $vars['feed_icons'] = drupal_get_feeds();  // Refresh $feed_icons variable
   }
   
   // Replace funny chinese characters in section name
@@ -34,7 +33,7 @@ function phptemplate_preprocess(&$vars, $hook) {
 }
 
 function phptemplate_preprocess_page(&$vars) {
-    
+
   // Add css for search
   $array_q = explode('/', $_GET['q']);
   if ($array_q[0] == 'search') {
@@ -60,11 +59,16 @@ function phptemplate_preprocess_node(&$vars) {
     // Add css for specific node types
     if ($vars['node']->type == 'blog') {
       drupal_add_css(path_to_theme() . '/css/node_blog.css', 'theme');
+      
     } elseif ($vars['node']->type == 'update') {
       drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
+      drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->book['bid']);
+    
     } elseif ($vars['node']->type == 'project') {
       drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
       drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
+      drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->nid);
+    
     } elseif ($vars['node']->type == 'zi') {
       drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
     }
