@@ -91,13 +91,7 @@
   <div class="node-content">
     <?php print $content; ?>
   </div>
-  
-  <?php if (!$page): ?>
-  <div class="comments">
-    <?php print $links; ?>
-  </div>
-  <?php endif; ?>
-    
+      
   <?php 
   /**
    * node_bottom
@@ -105,11 +99,19 @@
   if ($page && $node_bottom): ?>
     <?php print $node_bottom; ?>
   <?php endif; ?>
+    
+  <?php if ($page): ?>
+    <?php print $links; ?>
+  <?php endif; ?>
+  
+  <?php if (!$page): ?>
+  <div class="comments">
+    <?php print $links; ?>
+  </div>
+  <?php endif; ?>  
 </div> <!-- /node -->
 
-<?php if ($page): ?>
-  <?php print $links; ?>
-<?php endif; ?>
+
 
 <?php if ($terms): ?>
 <?php if ($page): ?><hr class="end-node" /><?php endif; ?>

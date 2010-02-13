@@ -1,5 +1,6 @@
 /* Print style */
 
+.post-date,
 .book-navigation,
 #page-content .links,
 #admin-tabs-top,
@@ -9,6 +10,11 @@
 #footer,
 .field-animal-picture {
   display:none;
+}
+
+#page-content {
+  margin:0;
+  padding:0;
 }
 
 .node,
@@ -26,4 +32,13 @@ body {
   margin-right:0;
   background-color:#fff;
   color:#000;
+}
+
+/* Otherwise, Firefox clips the content after the first page. */
+#second-body,
+#third-body,
+#main-wrapper,
+#site-wrapper
+{
+  overflow: visible;
 }

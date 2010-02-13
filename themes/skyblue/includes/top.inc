@@ -9,7 +9,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
   <?php print $styles; ?>
-  <?php print $scripts; ?>
+  <?php print $scripts; ?>  
   <?php 
     // Output CSS for Animal picture
     if ($node->field_animal_right[0]['value'] || $node->field_animal_top[0]['value']):
@@ -21,6 +21,9 @@
       }
     </style>
    <?php endif; ?>
+  <!--[if IE]>
+    <?php print '<link rel="stylesheet" href="'.path_to_theme().'/css/ie.css" />' ?>
+    <![endif]-->
 </head>
 
 <body class="<?php print trim($body_classes); ?>"><div id="second-body"><div id="third-body">
