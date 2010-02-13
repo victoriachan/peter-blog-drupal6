@@ -184,7 +184,7 @@ ol ol ol    { list-style-type: decimal; }
 li.leaf,
 ul li {
   list-style-type: square;
-  list-style-image:url(../../misc/menu-leaf.png);
+  list-style-image:url(../images/icons/square_bullet.png);
 }
 
 dl { }

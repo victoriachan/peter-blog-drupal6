@@ -18,20 +18,20 @@ body {
   }
   #top-bar {
     margin:0 0 0 5%;
-    padding: 0 0 0 10px;
-    width:880px;
+    padding: 0;
+    width:900px;
   }
   #site-wrapper {
     padding:0 0 0 5%;
     margin: 0;
-    width:890px;
+    width:900px;
     min-height:415px;
   }
   
 #main-wrapper {
   width:880px;
   overflow:hidden;
-  padding:0 10px 0 0;
+  padding:0 10px;
 }
   .primary-content {
     width:600px;
@@ -63,7 +63,7 @@ body {
 
 #content-bottom {
   margin:0 auto 30px 5%;
-  width:890px;
+  width:900px;
 }
 
 #footer {

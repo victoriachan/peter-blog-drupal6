@@ -97,6 +97,14 @@ function phptemplate_preprocess_node_default(&$vars) {
 }
 
 /**
+ * implementation of template_preprocess_book_navigation
+ */
+function phptemplate_preprocess_book_navigation(&$variables) {
+  $variables['tree'] = NULL;
+}
+
+
+/**
 * function to overwrite links. removes the reply link per node type
 *
 * @param $links

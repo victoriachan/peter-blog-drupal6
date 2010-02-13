@@ -35,17 +35,21 @@
     <?php print $tree; ?>
 
     <?php if ($has_links): ?>
-    <div class="page-links">
+    <ul class="page-links">
+      <li class="left">
       <?php if ($prev_url) : ?>
-        <a href="<?php print $prev_url; ?>" class="page-previous" title="<?php print t('Go to previous page'); ?>"><?php print t('‹ ') . $prev_title; ?></a>
+        <a href="<?php print $prev_url; ?>" class="page-previous" title="<?php print t('Go to previous page'); ?>"><?php print t('« ') . $prev_title; ?></a>
       <?php endif; ?>
+      </li><li class="middle">
       <?php if ($parent_url) : ?>
-        <a href="<?php print $parent_url; ?>" class="page-up" title="<?php print t('Go to parent page'); ?>"><?php print t('up'); ?></a>
+        <a href="<?php print $parent_url; ?>" class="page-up" title="<?php print t('Go to project home'); ?>"><?php print t('Project Home'); ?></a>
       <?php endif; ?>
+      </li><li class="right">
       <?php if ($next_url) : ?>
-        <a href="<?php print $next_url; ?>" class="page-next" title="<?php print t('Go to next page'); ?>"><?php print $next_title . t(' ›'); ?></a>
+        <a href="<?php print $next_url; ?>" class="page-next" title="<?php print t('Go to next page'); ?>"><?php print $next_title . t(' »'); ?></a>
       <?php endif; ?>
-    </div>
+      </li>
+    </ul>
     <?php endif; ?>
 
   </div>
