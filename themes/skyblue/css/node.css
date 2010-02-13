@@ -47,8 +47,11 @@
   width:auto;
   display:inline;
   float:left;
-  margin:0 30px 5px 0;
+  margin:0;
 }
+  .field-video {
+    margin: 0 30px 5px 0;
+  }
   .node .node-content img,
   .field-first-image img {
     border:1px solid #222;

@@ -384,22 +384,27 @@ h2.title a {
   }
 
 dl .lightbox-processed,
-.field-first-image .lightbox-processed {
-  border:1px dashed #000;
+.node .lightbox-processed {
+  border:3px solid #000;
   display: block;
   padding:3px;
   line-height:0;
 }
+  .node a.lightbox-processed {
+    width:auto;
+    float:left;
+    margin: 0 30px 0 0;
+  }
   dl .lightbox-processed img,
-  .field-first-image .lightbox-processed img{
+  .node .lightbox-processed img{
     border:1px solid #000;
   } 
 dl .lightbox-processed:hover,
-.field-first-image .lightbox-processed:hover {
-  border:1px dashed #666;
+.node .lightbox-processed:hover {
+  border:3px solid #666;
 }
   dl .lightbox-processed:hover img,
-  .field-first-image .lightbox-processed:hover img {
+  .node .lightbox-processed:hover img {
     opacity:0.6;
     filter:alpha(opacity=60)
   }
