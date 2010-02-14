@@ -87,13 +87,14 @@
       padding:0;
       list-style-image:none;
       list-style-type:none;
-      width:38%;
+      width:40%;
       float:left;
       overflow:hidden;
     }
       .book-navigation .page-links li.middle {
         text-align:center;
-        width:24%;
+        width:18%;
+        margin:0 1%;
       }
         .book-navigation .page-links li.middle a {
           font-size:13px;
