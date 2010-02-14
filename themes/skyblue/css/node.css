@@ -68,7 +68,7 @@
   }
   .node .node-content img,
   .field-first-image img {
-    border:1px solid #222;
+    /* border:1px solid #222; */
   }
 
 .field-video {
