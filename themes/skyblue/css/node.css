@@ -20,6 +20,14 @@
   line-height:1.6em;
 }
 
+.node-body a {
+  text-decoration:none;
+  background-color:#D1DCDF;
+}
+  .node-body a:hover {
+    background-color:#333;
+    color:#fff;
+  }
 .post-date {
   font-family: Georgia, "Times New Roman", Times, serif; 
   float:right;
