@@ -179,7 +179,7 @@ h2.title a {
     display: none;
   }
   #block-search #edit-search-block-form-1-wrapper {
-    width:150px;
+    width:130px;
     float:left;
     margin:0;
   }
@@ -199,11 +199,18 @@ h2.title a {
       background-color:rgba(0,0,0,0.3);
       margin:0;
     }
-  #block-search .form-button {
+  #search-block-form input.form-submit {
     display:inline;
     position:absolute;
-    right:7px;
-    bottom:3px;
+    right:5px;
+    bottom:2px;
+    padding:6px 5px 4px 5px;
+    font-size:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#000; 
   }
 
 /* Book nav */

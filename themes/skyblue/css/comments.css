@@ -1,1 +1,195 @@
 /* Comments */
+
+ul.links .comment_forbidden {
+  display:block;
+  height:30px;
+  margin-bottom:20px;
+}
+body.page-node .comment_forbidden,
+#comments {
+  clear:both;
+  background-color:#000;
+  border:5px solid #fff;
+  color:#333;
+  padding:5px 30px;
+  margin:20px 0 0 0;
+  width:530px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;   
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2); 
+}
+  body.page-node .comment_forbidden {
+    padding:20px 30px 10px 30px;
+    margin-bottom:10px;
+  }
+  #comments h2{
+    color:#fff;
+    font-size:2em;
+    padding-bottom:10px;
+    margin-bottom:0;
+    border-bottom:1px solid #fff;
+  }
+  .comment a{
+    color:#D00D4F;
+  }
+  #comments .comment {
+    clear:both;
+    padding:30px 0 15px 0;
+    margin:1px 0;
+    overflow:hidden;
+    font-size:0.95em;
+  }
+    /* #comments .comment:nth-of-type(odd), */
+    #comments .author_comment,
+    #comments .comment:hover {
+      background-color: #eee9e5;
+      background-color: rgba(90, 40, 0, 0.1);
+    }
+      #comments .comment:hover {
+        background-color: #d5d0c9;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+  .comment .comment_text {
+    float:left;
+    width:440px;
+    padding-left:20px;
+  }
+    .comment .comment_text blockquote {
+      border-left:3px solid #666;
+      padding:1px 10px;
+      background-color:#dad5cf;
+      background-color:rgba(0, 0, 0, 0.1);
+      color:#222;
+      width:440px;
+    }  
+  .comment .submitted {
+    font-size:0.9em;
+    line-height:1.1em;
+  }
+  .comment .content {
+    color:#555;
+    line-height:1.6em;
+    font-size:1.1em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing:0.01em;
+  }
+    .comment .content a{
+      color:#555;
+    }
+    .comment .content p.code, 
+    .comment .content ol.code, 
+    .comment .content ul.code{
+      line-height:normal;
+    }
+  .comment .links li {
+    padding:0;
+    margin:0;
+    line-height:1.1em;
+    font-size:0.9em;
+  }
+  .comment .links .comment_reply {
+    display:none;
+  }
+
+#comment-confirm-delete,
+#comment-form {
+  border:1px solid #666;
+  padding:10px 20px 20px 25px;
+  margin:20px 0 20px 0;
+  background: #333;
+  color:#999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; 
+  overflow:hidden;
+}
+  #comment-form a,
+  #comment-form .form-required{
+    color:#CBF1FE;
+  }
+  #comment-form .comment {
+    padding:10px;
+    margin:20px 0 40px 0;
+    border:1px dotted #999;
+    background-color:#444;
+  }
+    #comment-form .comment .content{
+      color:#333;
+    }
+  
+  #comment-form .form-item {
+    clear:both;
+    overflow:hidden;
+    margin:0.5em 0;
+  }
+    #comment-form .form-item label {
+      display:block;
+      width:100px;
+      padding-right:20px;
+      float:left;
+    }
+    #comment-form .form-item input {
+      width:300px;
+      float:left;
+      background-color:#ccc;
+      border:1px solid #666;
+      padding:3px 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -khtml-border-radius: 5px;
+      border-radius: 5px;      
+    }
+      #comment-form .form-item input:focus {
+        background-color:#fff;
+      }
+      #comment-form .form-item .resizable-textarea {
+        width:470px;
+        clear:both;
+      }
+    #comment-form .form-description {
+      clear:both;
+      margin:0 0 0 120px;
+      padding:5px 0;
+      display:block;
+      font-style:italic;
+      font-size:0.9em;
+      line-height:normal;
+    }
+  #comment-form textarea {
+    background: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    font: italic 13px Georgia, "Times New Roman", Times, serif;
+    letter-spacing:0.01em;
+    outline: none;
+    padding: 5px;
+    margin:5px 0 0 0;
+    width: 100%;
+    color:#666;
+  }
+  #comment-form .form-button {
+    width:auto;
+    display:inline;
+    float:left;
+  }
+.comment-preview {
+  padding:10px 0 20px 0;
+  margin-bottom:20px;
+  border-bottom:1px dashed #666;
+  overflow:hidden;
+}
+
+#edit-comment-wrapper {
+  clear:both;
+}
+  #edit-comment-wrapper textarea {
+    width:100%;
+  }

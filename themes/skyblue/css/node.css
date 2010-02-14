@@ -72,19 +72,3 @@
 .node .node-content h3 {
   margin:30px 0 20px 0;
 }
-
-/* page-node styles */
-body.page-node .node ul.links {
-  margin:-10px -20px 0 0;
-  padding:0 0 20px 0;
-  display:block;
-  text-align:right;
-  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
-  font-size:15px;
-}
-  body.page-node .node ul.links a {
-    text-decoration:none;
-  }
-  body.page-node .node ul.links a:hover {
-    text-decoration:underline;
-  }

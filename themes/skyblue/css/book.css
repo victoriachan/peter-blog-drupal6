@@ -1,7 +1,7 @@
 /* Book style for Updates and Project pages */
 
 .book-navigation {
-  padding:20px 0;
+  padding:40px 0 20px 0;
   clear:both;
 }
   .book-navigation .page-links {
@@ -55,3 +55,19 @@
         .book-navigation .page-links li.right a {
           float:right;
         }
+        
+/* Printer-friendly version link  */
+body.page-node .node ul.links {
+  margin:-10px -20px 0 0;
+  padding:0 0 20px 0;
+  display:block;
+  text-align:right;
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
+  font-size:15px;
+}
+  body.page-node .node ul.links a {
+    text-decoration:none;
+  }
+  body.page-node .node ul.links a:hover {
+    text-decoration:underline;
+  }
