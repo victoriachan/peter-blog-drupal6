@@ -95,9 +95,9 @@ function phptemplate_preprocess_node_default(&$vars) {
   $vars['blog_date'] = format_date($vars['node']->created, 'large');
 
    // embedded video
-   if ($vars['page'] && $vars['node']->field_video[0]['value']) {
-     $vars['video'] = views_embed_view('node_content','block_1', $vars['node']->nid);
-   } 
+   //if ($vars['page'] && $vars['node']->field_video[0]['value']) {
+   //  $vars['video'] = views_embed_view('node_content','block_1', $vars['node']->nid);
+   //} 
 }
 
 /**
