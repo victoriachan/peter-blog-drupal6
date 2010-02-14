@@ -1,1 +1,11 @@
 /* Project style */
+
+.node {
+  clear:both;
+  background:url(../images/grid_bg.png) 0 0 repeat-y;
+  width:510px;
+  padding:10px 35px 10px 55px;
+  -moz-box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+}

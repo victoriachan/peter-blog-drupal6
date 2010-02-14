@@ -62,6 +62,7 @@ function phptemplate_preprocess_node(&$vars) {
       
     } elseif ($vars['node']->type == 'update') {
       drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
+      drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
       drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->book['bid']);
     
     } elseif ($vars['node']->type == 'project') {

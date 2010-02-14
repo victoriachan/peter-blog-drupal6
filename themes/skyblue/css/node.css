@@ -61,7 +61,7 @@
 /* node content */
 .node blockquote {
   min-height:30px;
-  margin:0 0 20px -20px;
+  margin:0 0 20px -10px;
   padding:10px 30px 10px 100px;
   background: #e5e5e5 url(../images/blockquote_left.png) no-repeat 0 0;
   background: rgba(0, 0, 0, 0.1) url(../images/blockquote_left.png) no-repeat 0 0;
