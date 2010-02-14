@@ -107,7 +107,11 @@ function phptemplate_preprocess_book_navigation(&$variables) {
   $variables['tree'] = NULL;
 }
 
-
+function phptemplate_preprocess_comment_wrapper(&$vars) {
+  if ($vars['node']->comment_count > 0) {
+    $vars['has_comments'] = TRUE;
+  }
+}
 /**
 * function to overwrite links. removes the reply link per node type
 *

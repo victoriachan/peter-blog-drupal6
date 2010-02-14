@@ -165,7 +165,7 @@ h2.title a {
   overflow:hidden;
   position:relative;
   border:1px dashed #000;
-  padding:5px 10px;
+  padding:7px 10px;
   margin:10px 0 15px 0;
   filter:alpha(opacity=30);
   opacity:0.3;
@@ -189,29 +189,26 @@ h2.title a {
       background-color:#cfc8ba;
       background-color:rgba(0,0,0,0.1);
       color:#000;
-      border:1px solid #999;
+      border:1px solid #666;
       margin:0;
     }
     #search-form input.form-text:focus,
     #block-search #edit-search-block-form-1-wrapper input:focus {
       color:#fff;
-      background-color:#a39f9a;
-      background-color:rgba(0,0,0,0.3);
+      background-color:#444;
+      border:1px solid #000;
       margin:0;
     }
   #search-block-form input.form-submit {
     display:inline;
     position:absolute;
     right:5px;
-    bottom:2px;
-    padding:6px 5px 4px 5px;
+    bottom:3px;
     font-size:10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-    background-color:#000; 
   }
+    #search-block-form input.form-submit:hover {
+      background-color:#000;
+    }
 
 /* Book nav */
 #block-book {
@@ -424,17 +421,22 @@ body.user-edit #admin-tabs-top {
 #admin-tabs-top .messages{
   padding:5px 10px 5px 20px;
   margin:10px 0;
-  background-color:#b3b3b3;
-  background-color:rgba(255,255,255,0.7);
-  border:1px solid rgba(0,0,0,0.3);
-  
+  background-color:#222;
+  background-color: rgba(0,0,0, 0.7);
+  border:1px solid #000;
+  line-height:1.7em;
   -moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
   -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
   box-shadow: 1px 1px 5px rgba(0,0,0,0.4); 
-  
-  color: #444;
-  width:600px;
+  color: #B8DBE5;
+  width:550px;
 }
+  #admin-tabs-top .messages a {
+    color:#fff;
+  }
+  #admin-tabs-top .messages ul li {
+    list-style-image:url(../images/icons/square_bullet_white.png);
+  }
 #admin-tabs-top ul.primary{
   border-bottom:0;
   margin:0 0 0 5px;

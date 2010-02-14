@@ -10,7 +10,7 @@
     font-size:2.3em;
     font-weight:normal;
     text-shadow:none;
-    padding:20px 0 10px 0;
+    padding:20px 0;
     margin:0;
   }
 
@@ -21,6 +21,7 @@
 }
 
 .post-date {
+  font-family: Georgia, "Times New Roman", Times, serif; 
   float:right;
   font-size:1.3em;
   color:#fff;

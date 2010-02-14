@@ -75,8 +75,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset
     box-shadow: none;      
   }
    ol.code {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    letter-spacing:0.01em;
+    /* font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing:0.01em; */
     background: #666 url(../images/code_tile_ol.png) repeat-y ;
   }
      ol.code li {
@@ -126,9 +126,15 @@ h4, h5, h6 {
 /** block-level elements **/
   p, ul, ol, dl, pre, table, fieldset, blockquote
   {
-    margin: 1em 0;
+    margin: 1.5em 0;
     padding:0;
   }
+  p:first-of-type {
+    margin-top:0;
+  }
+  p:last-of-type {
+    margin-bottom:0;
+  } 
   
 /** lists **/
   /* standardize list item indentation */
@@ -185,6 +191,7 @@ li.leaf,
 ul li {
   list-style-type: square;
   list-style-image:url(../images/icons/square_bullet.png);
+  margin:1em 0;
 }
 
 dl { }
