@@ -1,5 +1,60 @@
 /* Book style for Updates and Project pages */
 
+/* Book block in right col */
+
+#block-peter-custom-book {
+  padding:10px 0;
+  clear:both;
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
+  font-size:16px;
+}  
+#block-peter-custom-book h3 a {
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
+  font-size:1.1em;
+  line-height:1em;
+  text-decoration:none;
+  display:block;
+  width:auto;
+  padding:10px 15px;
+  color:#333;
+  background-color:rgba(0,0,0,0.1);
+  -webkit-transform: rotate(-1deg) ;
+  -moz-transform: rotate(-1deg) ;
+  transform: rotate(-1deg) ;
+}
+  #block-peter-custom-book h3 a:hover {
+    text-decoration:none;
+    background-color:#222;
+    color:#fff;
+  }
+  
+#block-peter-custom-book ol {
+  margin:0;
+  padding:0;
+}
+  #block-peter-custom-book ol li {
+    margin:0 0 0 40px;
+    padding:10px 0;
+  }
+  #block-peter-custom-book ol a {
+    text-decoration:none;
+    color:#333;
+    color:rgba(0,0,0,0.7);
+    padding:0;
+    display:block;
+  }
+  #block-peter-custom-book li a.active,
+  #block-peter-custom-book li a:hover {
+    text-decoration:underline;
+  }
+  #block-peter-custom-book li a.active {
+    margin-left:-55px;
+    padding-left:55px;
+    background:url(../images/icons/drawn_right_arrow.png) 0 50% no-repeat;
+  }  
+
+/* Book nav bar at bottom of node */
+
 .book-navigation {
   padding:40px 0 20px 0;
   clear:both;

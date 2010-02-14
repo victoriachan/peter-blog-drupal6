@@ -1,0 +1,7 @@
+; $Id$
+name = peter custom
+description = Peter's website misc custom stuff such as custom block and minor tweaks
+dependencies[] = content
+dependencies[] = book
+package = Peter Custom
+core = 6.x

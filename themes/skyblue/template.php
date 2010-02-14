@@ -58,7 +58,6 @@ function phptemplate_preprocess_node(&$vars) {
   
     // Add css for specific node types
     if ($vars['node']->type == 'blog') {
-      drupal_add_css(path_to_theme() . '/css/node_blog.css', 'theme');
       
     } elseif ($vars['node']->type == 'update') {
       drupal_add_css(path_to_theme() . '/css/book.css', 'theme');

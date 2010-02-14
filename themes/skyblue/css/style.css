@@ -210,58 +210,6 @@ h2.title a {
       background-color:#000;
     }
 
-/* Book nav */
-#block-book {
-  padding:10px 0;
-  clear:both;
-  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
-  font-size:16px;
-}  
-#block-book h3 a {
-  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
-  font-size:1.1em;
-  line-height:1em;
-  text-decoration:none;
-  display:block;
-  width:auto;
-  padding:10px 15px;
-  color:#333;
-  background-color:rgba(0,0,0,0.1);
-  -webkit-transform: rotate(-1deg) ;
-  -moz-transform: rotate(-1deg) ;
-  transform: rotate(-1deg) ;
-}
-  #block-book h3 a:hover {
-    text-decoration:none;
-    background-color:#222;
-    color:#fff;
-  }
-  
-#block-book ul {
-  margin:0 0 0 -15px;
-  padding:0;
-}
-  #block-book ul li {
-    margin:0;
-    padding:10px 0;
-    list-style-image:none;
-    list-style-type:none;
-  }
-  #block-book li a {
-    text-decoration:none;
-    color:#333;
-    color:rgba(0,0,0,0.7);
-    padding:0 0 0 40px;
-    display:block;
-  }
-  #block-book li a.active,
-  #block-book li a:hover {
-    text-decoration:underline;
-  }
-  #block-book li a.active {
-    background:url(../images/icons/drawn_right_arrow.png) 0 50% no-repeat;
-  }  
-
 /* Pager */
 .pager {
   border-top:1px dashed #5b5650;

@@ -1,0 +1,134 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Some quick and dirty site specific customisation
+ */
+
+/**
+ * Implementation of hook_menu()
+ */
+
+//function peter_custom_menu() {
+//  $items['admin/settings/peter_custom'] = array(
+//      'title' => 'peter Custom settings',
+//      'description' => 'Set peter Custom variables.',
+//      'page callback' => 'drupal_get_form',
+//      'page arguments' => array('peter_custom_admin_settings'),
+//      'access arguments' => array('administer site configuration'),
+//      'type' => MENU_NORMAL_ITEM,
+//      'file' => 'peter_custom.admin.inc',
+//    );
+//    
+//    return $items;
+//}
+
+ /**
+ * Implementation of hook_nodeapi()
+ *
+ * Add wrapper around body field
+ * See http://capellic.com/blog/theming-the-node-body-field
+ */
+function peter_custom_nodeapi(&$node, $op, $teaser, $page) {
+  // Add wrapper class to node body field
+  if ($op == 'view') {
+    $node->content['body']['#value'] = "<div class=\"node-body\">" . 
+      $node->content['body']['#value'] . "</div>";
+  }
+  
+  // Always show 'read more'
+  if ($op == 'view' && $teaser && ($node->type != 'today')) {
+    $node->readmore = true;
+  }
+}
+
+/**
+ * Implementation of hook_block().
+ */
+function peter_custom_block($op = 'list', $delta = 0, $edit = array()) {
+
+  switch ($op) {
+    case 'list':
+    
+      $blocks['book']['info'] = t('Custom book navigation');
+      $blocks['book']['cache'] = BLOCK_CACHE_PER_PAGE | BLOCK_CACHE_PER_ROLE;       
+      return $blocks;
+      
+    case 'configure':
+    
+      $form = array();
+      if ($delta == 'book') {
+        $options = array(
+          'all pages' => t('Show block on all pages'),
+          'book pages' => t('Show block only on book pages'),
+        );
+        $form['peter_custom_book_block_mode'] = array(
+          '#type' => 'radios',
+          '#title' => t('Book navigation block display'),
+          '#options' => $options,
+          '#default_value' => variable_get('peter_custom_book_block_mode', 'all pages'),
+          '#description' => t("If <em>Show block on all pages</em> is selected, the block will contain the automatically generated menus for all of the site's books. If <em>Show block only on book pages</em> is selected, the block will contain only the one menu corresponding to the current page's book. In this case, if the current page is not in a book, no block will be displayed. The <em>Page specific visibility settings</em> or other visibility settings can be used in addition to selectively display this block."),
+        );
+      }
+      return $form;
+      
+    case 'save':
+
+      if ($delta == 'book') {
+        variable_set('peter_custom_book_block_mode', $edit['peter_custom_book_block_mode']);
+      }
+      return;
+      
+    case 'view': default:
+    
+      switch ($delta) {
+        /**
+         * Customise the book module so we can change the ul to ol!
+         */
+        case 'book':
+            $current_bid = 0;
+            if ($node = menu_get_object()) {
+              $current_bid = empty($node->book['bid']) ? 0 : $node->book['bid'];
+            }
+            if (variable_get('peter_custom_book_block_mode', 'all pages') == 'all pages') {
+              $block['subject'] = t('Book navigation');
+              $book_menus = array();
+              $pseudo_tree = array(0 => array('below' => FALSE));
+              foreach (book_get_books() as $book_id => $book) {
+                if ($book['bid'] == $current_bid) {
+                  // If the current page is a node associated with a book, the menu
+                  // needs to be retrieved.
+                  $book_menus[$book_id] = menu_tree_output(menu_tree_all_data($node->book['menu_name'], $node->book));
+                }
+                else {
+                  // Since we know we will only display a link to the top node, there
+                  // is no reason to run an additional menu tree query for each book.
+                  $book['in_active_trail'] = FALSE;
+                  $pseudo_tree[0]['link'] = $book;
+                  $book_menus[$book_id] = menu_tree_output($pseudo_tree);
+                }
+              }
+              $block['content'] = theme('book_all_books_block', $book_menus);
+            }
+            elseif ($current_bid) {
+              // Only display this block when the user is browsing a book.
+              $title = db_result(db_query(db_rewrite_sql('SELECT n.title FROM {node} n WHERE n.nid = %d'), $node->book['bid']));
+              // Only show the block if the user has view access for the top-level node.
+              if ($title) {
+                $tree = menu_tree_all_data($node->book['menu_name'], $node->book);
+                // There should only be one element at the top level.
+                $data = array_shift($tree);
+                $block['subject'] = theme('book_title_link', $data['link']);
+                $block['content'] = ($data['below']) ? menu_tree_output($data['below']) : '';
+                
+                // CUSTOM: replace ul with ol
+                $block['content'] = str_replace('<ul','<ol',$block['content']);
+                $block['content'] = str_replace('ul>','ol>',$block['content']);
+              }
+            }
+          break;                          
+      }
+      return $block;
+  }
+}

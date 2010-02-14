@@ -187,7 +187,13 @@ ol          { list-style-type: decimal; }
 ol ol       { list-style-type: lower-alpha; }
 ol ol ol    { list-style-type: decimal; }
 
-li.leaf,
+ol li.leaf,
+ol li {
+  list-style-type: decimal; 
+  list-style-image: none;
+}
+
+ul li.leaf,
 ul li {
   list-style-type: square;
   list-style-image:url(../images/icons/square_bullet.png);
