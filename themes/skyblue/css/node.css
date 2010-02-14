@@ -66,6 +66,10 @@
     border:1px solid #222;
   }
 
+.field-video {
+  margin:0 0 2em 0;
+}  
+
 /* node content */
 .node blockquote {
   min-height:30px;

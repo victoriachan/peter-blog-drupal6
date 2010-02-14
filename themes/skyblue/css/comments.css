@@ -18,13 +18,12 @@ body.page-node .comment_forbidden,
     margin-bottom:10px;
   }
   #comments h2{
-    color:#fff;
-    font-size:1.5em;
-    padding-top:10px;
+    color:#222;
+    font-size:1.6em;
+    padding:10px 0;
     padding-bottom:0;
     margin-bottom:0;
-    /* border-bottom:2px solid #fff; */
-    text-shadow: 0 1px 3px rgba(16,97,127,0.4);
+    /* text-shadow: 0 1px 3px rgba(16,97,127,0.4); */
   }
   .comment a{
     color:#D00D4F;
@@ -73,7 +72,7 @@ body.page-node .comment_forbidden,
 
 #comment-confirm-delete,
 #comment-form {
-  border:4px solid #fff;
+  border:1px solid #fff;
   padding:10px 20px 20px 25px;
   margin:0 0 20px 0;
   /* background: #DBD1BF url(../images/linen_bg.png) 0 0; */
