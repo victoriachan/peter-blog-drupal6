@@ -17,6 +17,10 @@
   padding:0;
 }
 
+#third-body {
+  border:0;
+}
+
 .node,
 .primary-content,
 #site-wrapper,
@@ -32,6 +36,13 @@ body {
   margin-right:0;
   background-color:#fff;
   color:#000;
+}
+
+.node blockquote {
+  margin:0;
+  padding:0 0 0 20px;
+  width:auto;
+  border-left:5px solid #666;
 }
 
 /* Otherwise, Firefox clips the content after the first page. */
