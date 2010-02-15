@@ -27,6 +27,10 @@
     background-color:#222;
     color:#fff;
   }
+
+body.node-type-project #block-peter-custom-book h3 {
+  display:none;
+}
   
 #block-peter-custom-book ol {
   margin:0;
