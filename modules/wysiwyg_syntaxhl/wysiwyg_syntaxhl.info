@@ -1,0 +1,15 @@
+; $Id: wysiwyg_syntaxhl.info,v 1.1 2009/12/01 04:05:47 meecect Exp $ 
+name = "Wysiwyg SyntaxHighlighter Plugin"
+description = "Wysiwyg editor plugin that integrates syntax highlighting into a normal &lt;pre&gt; element"
+dependencies[] = wysiwyg
+dependencies[] = wysiwyg_preelementfix
+dependencies[] = syntaxhighlighter
+package = "User interface"
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-12-06
+version = "6.x-1.2"
+core = "6.x"
+project = "wysiwyg_syntaxhl"
+datestamp = "1260136570"
+

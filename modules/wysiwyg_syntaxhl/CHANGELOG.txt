@@ -1,0 +1,69 @@
+$Id: CHANGELOG.txt,v 1.1.2.6 2009/12/06 21:49:00 meecect Exp $
+
+by meecect: Have not been able to fix ie collapsing whitespace issue, 
+  so now, it will always writes <pre> tags into the page for IE, and other browsers
+  will convert <pre> tags into {}-macro tags.  Either style will be read into the 
+  editor fine though.
+  
+by meecect: added test for inline popups plugin, and modified routine to get proper
+  languages regardless of standard popup or inline popup
+
+by meecect: changed dialog.htm to dialog.php to add a dynamic script tag that can 
+  determine the location of tiny_mce_popup.js.
+  
+by meecect: changed conversion routine to produce macro to use outerHTML to try and fix ie whitespace issue.
+  so far I am unsuccessful.
+  
+by meecect: added a sample.html file that has some instructions and several
+  cases of <pre>'s and {} to help testing various scenarios.
+  
+by meecect: removed any calls to innerHTML in dialog.js, in favor of a DOM
+  technique in a custom function _getText.
+  
+by meecect: fixed loop counter that was causing plugin to only read brush
+  class, and then breaking.
+  
+by meecect: reverted inclusion of tiny_mce_popup.js to static file to fix 
+  safari issue.
+
+by meecect: made it possible to edit older syntaxhl blocks and even regular
+  pre's.
+
+by meecect: changed method for converting pre blocks to macro using dom nodes.
+
+by meecect: removed the syntaxhl comment that i was appending to pre blocks as
+  unnecessary.
+
+by meecect: added some logic to remove the macro tags from inside a <p> nesting
+  that tiny insists on.
+
+by meecect: Added CHANGELOG.txt file.
+
+by meecect: ran jsmin on editor_plugin_src.js.
+
+by meecect: added context menu support.
+
+by meecect: moved <pre> and {} translation logic to individual functions.
+
+by meecect: moved language selection logic to dialog.js.
+
+#649936 by meecect: made it possible to re-edit already placed code blocks.
+
+by meecect: fixed issue so that clicking html code view shows <pre> blocks instead
+  of macros
+
+-syntaxhl plugin was incorporated into module source tree
+ 
+-Module updated to add available languages to the Drupal.setting javascript array
+ 
+-Install docs updated
+ 
+-Code was added to switch between the <pre> form to the {} form
+  of syntaxhighlighter, otherwise, the HTML that is generated has illegal class names
+  that conflict with some content filters.
+ 
+-Code was added to dialog.htm to dynamically discover the tinyMCE popup javascript library using drupal
+  helper properties
+ 
+-Code was added to dialog.htm to dynamically determine the proper language choices based on the Drupal
+  syntaxhighlighter module settings.

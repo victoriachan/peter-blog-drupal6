@@ -1,0 +1,35 @@
+<?php
+
+// $Id: wysiwyg_preelementfix.module,v 1.1 2009/11/14 14:17:08 mrfelton Exp $
+
+/**
+ * @file
+ * wysiwyg_preelementfix is an plugin for wysiwyg editors
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function wysiwyg_preelementfix_help($path, $arg) {
+  if ($path == 'admin/modules#description') {
+    return t('Enables the TinyMCE preelementfix plugin in Wysiwyg editor.');
+  }
+}
+
+/**
+* Implementation of hook_wysiwyg_plugin().
+*/
+function wysiwyg_preelementfix_wysiwyg_plugin($editor) {
+  switch ($editor) {
+    case 'tinymce':
+      $path = drupal_get_path('module', 'wysiwyg_preelementfix');
+      return array(
+        'preelementfix' => array(
+          'path' => $path .'/tinymce/preelementfix/editor_plugin.js',
+          'buttons' => array('preelementfix' => t('Pre element fix')),
+          'url' => 'http://sourceforge.net/tracker/index.php?func=detail&aid=2671750&group_id=103281&atid=738747',
+          'load' => TRUE,
+        ),
+      );
+  }
+}

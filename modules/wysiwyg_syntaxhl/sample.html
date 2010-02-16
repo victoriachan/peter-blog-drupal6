@@ -1,0 +1,34 @@
+<p>Testing.</p><p>Newly entered syntax block:</p><p>{syntaxhighlighter brush: php;fontsize: 100; first-line: 1;}&lt;?php
+
+print $this;
+
+// this block was entered with the tinymce editor
+// if it was entered with the editor plugin it gets 
+// a class "wysiwyg-syntaxhl class
+// on Save, the editor looks for pre tags
+// with that class and will convert it to 
+// the '{}' macro's on save
+
+?&gt;{/syntaxhighlighter}</p><p>Old syntax block:</p><pre class="brush: bash;fontsize: 100; first-line: 1;">[swf
+file="some-flash-file.swf"] &lt;- wrong
+[swf file="flash/some-flash-file.swf"] &lt;- correct
+
+# this block was already syntax highlighted in 'pre' format
+# so it doesn't get the wysiwyg-syntaxhl special class.  If you save
+# the node without invoking the popup, it will remain intact.
+# If you edit it with the popup, it will then get the wysiwyg-syntaxhl class.  
+# When saved, all pre's that have the wysiwyg-syntaxhl class are converted to 
+# the macro format with {}'s
+# Note: you can edit this text in the tinyMCE editor and not trigger
+# the conversion, it will only get converted to the {} format if you click the syntax button and 
+# invoke the popup 
+</pre><p>
+
+Just a regular pre block:
+
+</p><pre>some
+text                         with            white
+space</pre><p>&nbsp;</p><p>If you enable the 'path' option in the wysiwyg profile section, you
+can investigate the preceding pre boxes easily.&nbsp; Just put your cursor
+in the box you want to check and look at the path.&nbsp; You should see
+something like:</p><p>Path: pre.wysiwyg-syntaxhl brush: php;fontsize: 100; first-line: 1;</p><p>-for pre's that were created by converting macro {} to pre boxes, or for newly inserted syntax boxes from the popup.</p><p>&nbsp;or</p><p>Path: pre.brush: bash;fontsize: 100; first-line: 1;</p><p>-for syntax boxes that pre-existed in the node, and still use the pre format instead of the macro {} tags</p><p>or</p><p>Path: pre</p><p>-for regular pre tags that might pre-exist.</p><p>&nbsp;</p><p>Note: The syntax highlight button should 'activate' (button should get a border) if you place the cursor in ANY pre element.&nbsp; I am only checking for whether the element is a &lt;pre&gt;, that's it.</p>

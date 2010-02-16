@@ -1,0 +1,53 @@
+<?php
+// $Id: wysiwyg_syntaxhl.module,v 1.1.2.1 2009/12/02 22:26:06 meecect Exp $ 
+/**
+ * @file
+ * wysiwyg_syntaxhl is an plugin for adding syntax highlighting to the tinyMCE editor
+ * Clifford Meece, 2009
+ * http://cliffordmeece.com
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function wysiwyg_syntaxhl_help($path, $arg) {
+  if ($path == 'admin/modules#description') {
+    return t('Enables the SyntaxHighlighter plugin in the wysiwyg tinyMCE editor.');
+  }
+}
+
+/**
+* Implementation of hook_wysiwyg_plugin().
+*/
+function wysiwyg_syntaxhl_wysiwyg_plugin($editor) {
+  // The folowing variable is needed to make sure drupal_add_js isn't called twice
+  // taken from the example in imce.module
+  static $integrated;
+  switch ($editor) {
+    case 'tinymce':
+      if (!isset($integrated)) {
+        $integrated = TRUE;
+        $languages=array();
+        foreach ( variable_get('syntaxhighlighter_enabled_languages', array('shBrushPhp.js')) as $ind=>$val) {
+          if ($val) {
+            $languages[]=array('value' => strtolower(substr(substr($ind, 7),0,-3)), 
+              'text' => substr(substr($val, 7),0,-3)
+            );            
+          }
+        }
+        $settings = array(
+          'wysiwyg_syntaxhl' =>  array('languages' => $languages)
+        );
+      drupal_add_js($settings, 'setting');
+    }
+    $path = drupal_get_path('module', 'wysiwyg_syntaxhl') . '/tinymce/syntaxhl/editor_plugin.js';
+    return array(
+        'syntaxhl' => array(
+          'path' => $path,
+          'buttons' => array('syntaxhl' => t('SyntaxHighlighter')),
+          'url' => 'http://github.com/RichGuk/syntaxhl',
+          'load' => TRUE,
+        ),
+    );
+  }
+}

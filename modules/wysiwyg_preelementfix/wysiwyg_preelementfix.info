@@ -1,0 +1,14 @@
+; $Id: wysiwyg_preelementfix.info,v 1.1 2009/11/14 14:17:08 mrfelton Exp $
+
+name = "Wysiwyg Pre Element Fix"
+description = "Wysiwyg editor plugin that fixes the behaviour of &lt;pre> elements in TinyMCE."
+dependencies[] = wysiwyg
+package = "User interface"
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-11-14
+version = "6.x-1.0-beta1"
+core = "6.x"
+project = "wysiwyg_preelementfix"
+datestamp = "1258209988"
+

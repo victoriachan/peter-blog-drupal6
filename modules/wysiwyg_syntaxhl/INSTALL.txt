@@ -1,0 +1,13 @@
+$Id: INSTALL.txt,v 1.1.2.1 2009/12/02 22:26:06 meecect Exp $ 
+# copyright 2009
+# Clifford Meece
+# http://cliffordmeece.com
+
+To enable this module:
+
+1. Upload it to your sites/all/modules folder and enable it on the admin/build/modules page.
+
+2. Configure one of your WYSIWYG profiles to use the SyntaxHighlighter button.
+
+3. Verify that TinyMCE can insert syntax highlighted code sections correctly when you create or edit
+   a page using your WYSISWYG profile.

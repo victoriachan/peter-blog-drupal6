@@ -1,0 +1,20 @@
+# $Id: INSTALL.txt,v 1.1 2009/11/14 14:17:08 mrfelton Exp $
+
+To enable this module:
+
+1. Upload it to your sites/all/modules folder and enable it on the admin/build/modules page.
+
+2. Install the TinyMCE preelementfix plugin
+
+   In order to use Spell Checker, you will need to download and install the
+   TinyMCE preelementfix plugin which is available from:
+   http://sourceforge.net/tracker/index.php?func=detail&aid=2671750&group_id=103281&atid=738747
+
+   Download, extract the plugin into wysiwyg_preelementfix/tinymce/
+
+   After installation it should be found in wysiwyg_preelementfix/tinymce/preelementfix/
+
+3. Configure one of your WYSIWYG profiles to use the TinyMCE preelementfix plugin.
+
+4. Verify that TinyMCE handles <pre> elements correctly when you create or edit
+   a page using your WYSISWYG profile.

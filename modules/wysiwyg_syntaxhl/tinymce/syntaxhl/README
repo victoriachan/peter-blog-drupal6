@@ -1,0 +1,40 @@
+$Id: README,v 1.1.2.1 2009/12/02 22:26:06 meecect Exp $
+
+SyntaxHL is a plugin for the Tinymce (http://tinymce.moxiecode.com/) javascript WYSIWYG editor 
+allowing you to insert highlighted code into the editor.
+The syntax highlighting is done using Syntax Highligher 
+(http://code.google.com/p/syntaxhighlighter/) 
+and the plugin simply produces the right syntax for this.
+
+================================================================================
+License
+
+Copyright (c) 2008 Richard Grundy.
+
+TinyMCE is released under the LGPL and therefore so is this plugin.
+
+http://www.opensource.org/licenses/lgpl-license.php
+
+Please feel free to modify the project and send pull requests with improvements, changes are welcome!
+
+If you have any problems at all contact me and I'll do the best I can to help.
+
+http://27smiles.com
+
+================================================================================
+
+Plugin modified in 2009 by Clifford Meece
+http://www.cliffordmeece.com
+
+Changes: 
+
+-Code was added to switch between the <pre> form to the {} form
+of syntaxhighlighter, otherwise, the HTML that is generated has illegal class names
+that conflict with some content filters.
+
+-Code was added to dialog.htm to dynamically discover the tinyMCE popup javascript library using drupal
+helper properties
+
+-Code was added to dialog.htm to dynamically determine the proper language choices based on the Drupal
+syntaxhighlighter module settings.
+
