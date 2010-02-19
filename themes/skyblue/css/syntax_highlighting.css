@@ -1,0 +1,89 @@
+/**
+ * SyntaxHighlighter
+ * http://alexgorbatchev.com/
+ *
+ * SyntaxHighlighter is donationware. If you are using it, please donate.
+ * http://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
+ *
+ * @version
+ * 2.1.364 (October 15 2009)
+ * 
+ * @copyright
+ * Copyright (C) 2004-2009 Alex Gorbatchev.
+ *
+ * @license
+ * This file is part of SyntaxHighlighter.
+ * 
+ * SyntaxHighlighter is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * SyntaxHighlighter is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with SyntaxHighlighter.  If not, see <http://www.gnu.org/copyleft/lesser.html>.
+ */
+/**
+ * Midnight SyntaxHighlighter theme based on theme by J.D. Myers
+ * http://webdesign.lsnjd.com/
+ */
+
+/************************************
+ * Interface elements.
+ ************************************/
+.node .syntaxhighlighter {
+  font-size:0.9em !important;
+  padding-top:5px !important;
+  padding-bottom:5px !important;
+  /* filter:alpha(opacity=90);
+  opacity:0.9; */
+}
+.node .syntaxhighlighter table td {
+  padding-top:3px !important;
+  padding-bottom:3px !important;
+}
+  .node .syntaxhighlighter code {
+    line-height:normal!important;
+  }
+
+.node .syntaxhighlighter .line .number code {
+  width:33px !important;
+  font-family: Arial, "Bitstream Vera Sans", sans-serif !important;
+  font-size:0.9em !important;
+  line-height:normal !important;
+  color:#333 !important;
+}
+
+.node .syntaxhighlighter
+{
+	background:#8A9CA7 url(../images/code_tile_ol.png) repeat-y scroll 0 0 !important;
+	-moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Add border to the lines */
+.node .syntaxhighlighter .line .number {
+  width:40px !important;
+}
+.syntaxhighlighter .line .content
+{
+	border-left: 3px solid transparent !important;
+}
+
+/* First line */
+.node .syntaxhighlighter .line.alt1
+{
+	background-color: transparent !important;
+}
+
+/* Second line */
+.node .syntaxhighlighter .line.alt2
+{
+	background-color: rgba(200,200,200,0.1) !important;
+}

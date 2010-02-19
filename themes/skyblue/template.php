@@ -90,7 +90,8 @@ function phptemplate_preprocess_node_default(&$vars) {
    * load usual node stuff
    */
   drupal_add_css(path_to_theme() . '/css/node.css', 'theme'); 
-   
+  drupal_add_css(path_to_theme() . '/css/syntax_highlighting.css', 'theme');
+  
   // Format nice blog dates
   $vars['blog_date'] = format_date($vars['node']->created, 'large');
 
