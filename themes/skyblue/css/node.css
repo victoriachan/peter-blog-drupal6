@@ -64,6 +64,8 @@
   display:inline;
   float:left;
   margin:0;
+  position:relative;
+  z-index:3;
 }
   .field-video {
     margin: 0 30px 5px 0;
