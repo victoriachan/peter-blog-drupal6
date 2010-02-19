@@ -87,3 +87,8 @@
 {
 	background-color: rgba(200,200,200,0.1) !important;
 }
+
+/* syntax */
+.node .syntaxhighlighter .keyword {
+  color:#E62E5B !important;
+}
