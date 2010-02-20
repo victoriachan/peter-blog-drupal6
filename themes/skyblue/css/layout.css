@@ -21,6 +21,8 @@ body {
     margin:0 0 0 5%;
     padding: 0;
     width:900px;
+    height:70px;
+    position:relative;    
   }
   #site-wrapper {
     padding:0 0 0 5%;
@@ -46,7 +48,7 @@ body {
       position:relative;
     }
     .page-content {
-      padding:30px 0 0 0;
+      padding:15px 0 0 0;
     }
       .node {
         width:510px;

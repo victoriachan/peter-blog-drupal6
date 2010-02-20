@@ -48,6 +48,9 @@ function phptemplate_preprocess_page(&$vars) {
 function phptemplate_preprocess_node(&$vars) {
   
   if ($vars['page']) {
+
+    // Format nice blog dates
+    $vars['blog_date'] = format_date($vars['node']->created, 'large');    
     
     // To access regions in nodes
     $vars['node_bottom'] = theme('blocks', 'node_bottom');
@@ -55,8 +58,9 @@ function phptemplate_preprocess_node(&$vars) {
     // Add css for node pages
     drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
     drupal_add_css(path_to_theme() . '/css/comments.css', 'theme');
+    drupal_add_css(path_to_theme() . '/css/syntax_highlighting.css', 'theme');
   
-    // Add css for specific node types
+    // Handle specific node types
     if ($vars['node']->type == 'blog') {
       
     } elseif ($vars['node']->type == 'update') {
@@ -68,6 +72,7 @@ function phptemplate_preprocess_node(&$vars) {
       drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
       drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
       drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->nid);
+      $vars['blog_date'] = null;
     
     } elseif ($vars['node']->type == 'zi') {
       drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
@@ -75,30 +80,6 @@ function phptemplate_preprocess_node(&$vars) {
     
   }
   
-  // Load node type-specific preprocess functions (if they exist)
-  $function = 'phptemplate_preprocess_node'.'_'. $vars['node']->type;
-  if (function_exists($function)) {
-    $function(&$vars);
-  } else {
-    // Load the usual node stuff
-    phptemplate_preprocess_node_default($vars);
-  }
-}
-
-function phptemplate_preprocess_node_default(&$vars) {
-  /**
-   * load usual node stuff
-   */
-  drupal_add_css(path_to_theme() . '/css/node.css', 'theme'); 
-  drupal_add_css(path_to_theme() . '/css/syntax_highlighting.css', 'theme');
-  
-  // Format nice blog dates
-  $vars['blog_date'] = format_date($vars['node']->created, 'large');
-
-   // embedded video
-   //if ($vars['page'] && $vars['node']->field_video[0]['value']) {
-   //  $vars['video'] = views_embed_view('node_content','block_1', $vars['node']->nid);
-   //} 
 }
 
 /**
