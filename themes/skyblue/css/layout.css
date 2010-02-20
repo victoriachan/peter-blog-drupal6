@@ -14,7 +14,7 @@ body {
   #third-body {
     width:100%;
     min-height:600px;
-    border-top:8px solid #222;
+    border-top:2px solid #222;
     background: url(../images/sitebg_top.jpg) no-repeat 0 0;
   }
   #top-bar {

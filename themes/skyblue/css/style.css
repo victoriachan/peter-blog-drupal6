@@ -5,22 +5,22 @@
   margin:0;
   padding:0;
   position:absolute;
-  top:2px;
+  top:0;
   left:15px;
 }
   #site-name a {
-    background:url(../images/title.png) 0 100% no-repeat;
+    background:url(../images/title.png) 0 -46px no-repeat;
     line-height:normal;
     height:30px;
     display:block;
     width:275px;
-    height:47px;
+    height:44px;
     text-indent:-1000px;
     overflow:hidden;
   }
   #top-bar #site-name a:hover {
-    background: url(../images/title.png) 0 0 no-repeat;
-    background-color: transparent;
+    background: url(../images/title.png) 0 1px no-repeat;
+    background-color: #fff;
   }
   
 #top-bar{
@@ -39,15 +39,14 @@
     #top-bar a:hover{
       color:#333;
       color:rgba(0,0,0,0.7);
-      background-color:#92BEE3;
-      background-color:rgba(0,0,0,0.1);
+      background-color:#fff;
     }
 
 /* Primary link */
 #top-bar #block-menu-primary-links {
   position:absolute;
   right:0;
-  top:20px;
+  top:17px;
   width:650px;
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
   font-size:18px;
@@ -66,7 +65,7 @@
   line-height:1em;
   }
   #top-bar .block-menu a {
-    padding:0 8px;
+    padding:3px 8px;
   }
 
 #top-bar .expanded {
@@ -190,12 +189,13 @@ h2.title a {
       background-color:rgba(0,0,0,0.1);
       color:#000;
       border:1px solid #666;
+      border:1px solid rgba(0,0,0,0.3);
       margin:0;
     }
     #search-form input.form-text:focus,
     #block-search #edit-search-block-form-1-wrapper input:focus {
       color:#fff;
-      background-color:#444;
+      background-color:#000;
       border:1px solid #000;
       margin:0;
     }
