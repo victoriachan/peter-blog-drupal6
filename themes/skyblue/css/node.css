@@ -7,6 +7,7 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
   .node h1.title {
+    color:#000;
     font-size:2.3em;
     font-weight:normal;
     text-shadow:none;

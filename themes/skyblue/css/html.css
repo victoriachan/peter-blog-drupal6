@@ -91,8 +91,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset
 /** headings **/
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif; 
-  font-size: 3.7em;
-  color:#000;
+  font-size: 3.3em;
+  color:#fff;
   font-weight: normal;
   line-height: normal;
   margin: 0;

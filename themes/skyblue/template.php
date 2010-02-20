@@ -83,6 +83,13 @@ function phptemplate_preprocess_node(&$vars) {
 }
 
 /**
+ * Implementation of template_preprocess_views_view
+ */
+function phptemplate_preprocess_views_view__projects(&$vars) {
+  drupal_add_css(path_to_theme() . '/css/home_projects.css', 'theme');
+}
+
+/**
  * implementation of template_preprocess_book_navigation
  */
 function phptemplate_preprocess_book_navigation(&$variables) {
