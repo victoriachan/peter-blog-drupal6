@@ -25,12 +25,11 @@ h1.title {
   .view-projects .attachment-before {
     width:100%;
   }
-  .view-projects ul {
+  .view-projects ul.item-list-list {
     margin:0;
     padding:0;
   }
-  .view-projects li.views-row-odd,
-  .view-projects li.views-row-even {
+  .view-projects li.item-list-row {
     width:29%;
     float:left;
     margin:20px 0;

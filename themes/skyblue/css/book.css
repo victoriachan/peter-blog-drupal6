@@ -67,6 +67,7 @@ body.node-type-project #block-peter-custom-book h3 {
     padding:10px 0;
     margin:0 0 0 -55px;
     width:605px;
+    background-color:#444;
     background-color:rgba(0,0,0,0.8);
     -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);

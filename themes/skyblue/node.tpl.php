@@ -64,14 +64,18 @@
     <?php print $video; ?>
 <?php endif; ?>
 
-<?php if ($blog_date): ?>
+<?php if ($page && $blog_date): ?>
     <p class="post-date"><?php print $blog_date; ?></p>
 <?php endif; ?>
   
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 
   <?php print $picture; ?>
-
+  
+  <?php if ((!$page) && $blog_date): ?>
+    <p class="post-date"><?php print $blog_date; ?></p>
+  <?php endif; ?>
+  
   <?php if ($page): ?>
     <h1 class="title"><?php print $title; ?></h1>
   <?php else: ?>

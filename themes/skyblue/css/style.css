@@ -112,10 +112,13 @@ h1.title {
 }
 h2.title a {
   text-decoration:none;
-  background-color:#000;
-  color:#fff;
-  padding:2px 5px;
+  font-weight:normal;
+  font-size:1.3em;
+  color:#000;
 }
+  h2.title a:hover {
+    color:#999;
+  }
 
 /* Node taxonomy */
 .node .terms {
