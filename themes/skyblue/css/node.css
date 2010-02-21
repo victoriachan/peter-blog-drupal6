@@ -177,6 +177,7 @@
   }
     .node-teaser .comments ul.links li {
       padding:0 0 0 10px;
+      margin:0;
     }
     .node-teaser .comments ul.links a {
       text-decoration:none;
