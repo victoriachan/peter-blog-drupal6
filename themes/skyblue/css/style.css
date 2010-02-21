@@ -5,22 +5,20 @@
   margin:0;
   padding:0;
   position:absolute;
-  top:0;
-  left:15px;
+  top:4px;
+  left:0;
 }
   #site-name a {
-    background:url(../images/title.png) 0 -46px no-repeat;
+    background:url(../images/title.png) 0 -40px no-repeat;
     line-height:normal;
-    height:30px;
     display:block;
     width:275px;
-    height:44px;
+    height:40px;
     text-indent:-1000px;
     overflow:hidden;
   }
   #top-bar #site-name a:hover {
-    background: url(../images/title.png) 0 1px no-repeat;
-    background-color: #fff;
+    background: url(../images/title.png) 0 3px no-repeat;
   }
   
 #top-bar{
@@ -28,6 +26,7 @@
 }
   #top-bar a{
     color:#fff;
+    color:rgba(255,255,255,0.8);
     text-decoration:none;  
   }
     #top-bar .active-trail a,
@@ -47,7 +46,8 @@
   top:17px;
   width:650px;
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
-  font-size:18px;
+  font-size:16px;
+  letter-spacing:0.05em;
   text-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 #top-bar ul.menu{
@@ -85,7 +85,7 @@
     z-index:3;
     left:0;
     text-align:left;
-    font-size:0.8em;
+    font-size:0.9em;
   }
   #top-bar .expanded ul.menu li {
     display:block;
@@ -435,6 +435,12 @@ body.user-edit #admin-tabs-top {
 }
 div.view div.views-admin-links li a {
   color:#000;
+}
+#admin-tabs-top .messages .krumo-root {
+  color:#333;
+}
+#admin-tabs-top .messages a.krumo-name {
+  color:#404000;
 }
 
 /* Randoms */
