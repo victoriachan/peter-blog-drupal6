@@ -88,6 +88,7 @@
   background: rgba(0,0,0,0.1) url(../images/blockquote.png) no-repeat 10px 5px;
   border-left:6px solid rgba(0,0,0,0.3);
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
+  letter-spacing:0.04em;
 }
 .node .node-content blockquote p:last-of-type {
   margin-bottom:0;

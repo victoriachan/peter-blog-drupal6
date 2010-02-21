@@ -81,9 +81,9 @@
   <?php endif; ?>
   
   <?php if ($page): ?>
-    <h1 class="title"><?php print $title; ?></h1>
+    <h1 class="title" lang="zh-hans"><?php print $title; ?></h1>
   <?php else: ?>
-    <h2 class="title">
+    <h2 class="title" lang="zh-hans">
       <a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a>
     </h2>
   <?php endif; ?>

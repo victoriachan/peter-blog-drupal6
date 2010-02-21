@@ -5,6 +5,7 @@
   font-size:4em;
   padding:0;
   margin:0;
+  font-family: Kai, STKaiti, Georgia, "Times New Roman", Times, serif; 
 }
   .node h1.title,
   .node-teaser h2.title a {
@@ -48,6 +49,7 @@
 }
   .post-date-block a {
     color:#fff;
+    text-decoration:none;
   }
   .post-date-block span {
     display:block;
