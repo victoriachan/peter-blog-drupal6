@@ -33,5 +33,11 @@ body.node-type-project .node h1.title {
   font-size:3.3em;
 }
 body.node-type-project .node {
-  margin-top:21px;
+  margin-top:0px;
+}
+body.node-type-project .page-content {
+  padding-top:20px;
+}
+body.node-type-project #admin-tabs-top ul.primary {
+  top:0;
 }
