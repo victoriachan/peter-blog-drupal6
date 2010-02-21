@@ -37,7 +37,7 @@ body.node-type-project #block-peter-custom-book h3 {
   padding:0;
 }
   #block-peter-custom-book ol li {
-    margin:0 0 0 40px;
+    margin:0 0 0 45px;
     padding:10px 0;
   }
   #block-peter-custom-book ol a {
@@ -52,9 +52,9 @@ body.node-type-project #block-peter-custom-book h3 {
     text-decoration:underline;
   }
   #block-peter-custom-book li a.active {
-    margin-left:-55px;
-    padding-left:55px;
-    background:url(../images/icons/drawn_right_arrow.png) 0 50% no-repeat;
+    margin-left:-40px;
+    padding-left:40px;
+    background:url(../images/icons/right_arrow.png) 0 2px no-repeat;
   }  
 
 /* Book nav bar at bottom of node */
