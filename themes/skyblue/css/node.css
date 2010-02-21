@@ -87,7 +87,7 @@
   padding:10px 30px 10px 85px;
   background: rgba(0,0,0,0.1) url(../images/blockquote.png) no-repeat 10px 5px;
   border-left:6px solid rgba(0,0,0,0.3);
-  /* font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif; */
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
 }
 .node .node-content blockquote p:last-of-type {
   margin-bottom:0;
