@@ -4,15 +4,65 @@
 h1.title {
   margin-top:15px;
   font-size:4em;
+  line-height:normal;
 }
 
 #page-content {
-  width:780px;
+  width:800px;
   clear:both;
   background:url(../images/grid_bg.png) 0 0 repeat-y;
-  padding:30px 40px 30px 60px;
+  padding:20px 30px 20px 50px;
   margin:0;
   -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);  
+}
+
+/* columns */
+.view-projects {
+  overflow:hidden;
+}
+  .view-projects .views-row-odd,
+  .view-projects .views-row-even {
+    width:29%;
+    float:left;
+    margin:20px 0;
+  }
+    .view-projects .views-row-1,
+    .view-projects .views-row-4,
+    .view-projects .views-row-7,
+    .view-projects .views-row-10,
+    .view-projects .views-row-13 {
+      clear:both;
+      margin-right:6.5%;
+    }  
+    .view-projects .views-row-3,
+    .view-projects .views-row-6,
+    .view-projects .views-row-9,
+    .view-projects .views-row-12 {
+      float:right;
+    }
+    
+.view-projects .title {
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
+  font-size:16px;
+  line-height:normal;
+  margin:0 0 1em 0;
+}
+  .view-projects .title a {
+    display:block;
+    text-decoration:none;
+    padding:5px 0;
+    border-top:4px solid #222;
+    border-bottom:1px solid #222;    
+  }
+  .view-projects .title a:hover {
+    background-color:#e5e5e5;
+    background-color:rgba(0,0,0,0.1);
+  }
+.view-projects .field-intro-value {
+  font-family: LatinModernRoman10Regular, "Hoefler Text", "Times New Roman", Times, serif;
+  font-size:14px;
+  line-height:1.6em;
+  color:#666;
 }
