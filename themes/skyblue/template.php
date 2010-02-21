@@ -5,6 +5,32 @@
  * template file for  subtheme
  */
 
+function format_date_parts ($date) {
+  //assumes $date is d.M.Y
+  $date_string = format_date($date, 'custom', 'd.m.Y');
+  $arr_dateparts = explode('.',$date_string);
+  $chinese_month = array(                 
+    '01' => '一月',
+    '02' => '二月',
+    '03' => '三月',
+    '04' => '四月',
+    '05' => '五月',
+    '06' => '六月',
+    '07' => '七月',
+    '08' => '八月',
+    '09' => '九月',
+    '10' => '十月',
+    '11' => '十一月',
+    '12' => '十二月'
+  );
+                     
+  $ret = '';
+  $ret .= '<span class="month" title="'.$arr_dateparts[1].'">'.$chinese_month[$arr_dateparts[1]].'</span><span class="delimiter"> / </span>';
+  $ret .= '<span class="date" title="'.$arr_dateparts[0].'">'.$arr_dateparts[0].'</span><span class="delimiter"> / </span>';
+  $ret .= '<span class="year" title="'.$arr_dateparts[2].'">'.$arr_dateparts[2].'</span>';
+  return $ret;
+}
+
 function phptemplate_preprocess(&$vars, $hook) {
   if($hook == 'page') {
     // Add a 'page-node' class if this is a node that is rendered as page
@@ -80,6 +106,11 @@ function phptemplate_preprocess_node(&$vars) {
     
   }
   
+  // different date for zi
+  if ($vars['node']->type == 'zi') {
+    $vars['blog_date'] = format_date_parts($vars['node']->created);
+  }
+  
 }
 
 /**
@@ -95,6 +126,7 @@ function phptemplate_preprocess_views_view__section_listing(&$vars) {
     drupal_add_css(path_to_theme() . '/css/home_blog.css', 'theme');
   } elseif ($vars['view']->current_display == 'page_2') {
     drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+    drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
     drupal_add_css(path_to_theme() . '/css/home_zi.css', 'theme');
   }
 }
@@ -105,6 +137,7 @@ function phptemplate_preprocess_views_view__archive(&$vars) {
     drupal_add_css(path_to_theme() . '/css/home_blog.css', 'theme');
   } elseif ($vars['view']->current_display == 'page_2') {
     drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+    drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
     drupal_add_css(path_to_theme() . '/css/home_zi.css', 'theme');
   }
 }

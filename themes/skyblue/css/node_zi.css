@@ -1,1 +1,79 @@
 /* Zi styles */
+
+.node h1.title,
+.node-teaser h2.title {
+  font-size:4em;
+  padding:0;
+  margin:0;
+}
+  .node h1.title,
+  .node-teaser h2.title a {
+    font-weight:bold;
+  }
+  .node h1.title {
+    font-size:6em;
+  }
+
+/* Page */
+.page-node .page-content {
+  padding-top:37px;
+}
+
+.node,
+.node-teaser {
+  background:url(../images/tornpaper_bg.png) 0 0 repeat-y;
+  width:510px;
+  padding:25px 40px 10px 45px;
+  -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+  .node-teaser {
+    padding:30px 40px 30px 40px;
+  }
+  
+/* Teaser */
+.post-date-block {
+  float:right;
+  width:auto;
+  background-color:rgba(0,0,0,0.8);
+  color:#fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight:normal;
+  margin:0 -20px 0 0;
+  padding:5px 0;
+  -webkit-transform: rotate(4deg) ;
+  -moz-transform: rotate(4deg) ;
+  transform: rotate(4deg) ;  
+}
+  .post-date-block a {
+    color:#fff;
+  }
+  .post-date-block span {
+    display:block;
+    text-align:center;
+    padding:0 25px;
+  }
+  .post-date-block span.delimiter {
+    display:none;
+  }
+  .post-date-block span.date {
+    font-size:40px;
+    line-height:25px;
+    margin:0;
+    padding:3px 0 7px 0;
+  }
+  .post-date-block span.month {
+    font-size:15px;
+    line-height:15px;
+    letter-spacing:3px;
+    padding:2px 0 0 0;
+  }
+  .post-date-block span.year {
+    font-size:0.9em;
+    line-height:1.1em;
+    background-color:#666;
+    color:#fff;
+    font-style:italic;
+    padding:0 25px;
+  }

@@ -110,10 +110,13 @@
 h1.title {
   text-shadow: 0 1px 3px rgba(16,97,127,0.2);
 }
+h2.title {
+  font-size:2.3em;
+  line-height:normal;
+}
 h2.title a {
   text-decoration:none;
   font-weight:normal;
-  font-size:1.3em;
   color:#000;
 }
   h2.title a:hover {
