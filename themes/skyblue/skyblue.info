@@ -6,11 +6,9 @@ engine      = phptemplate
 base theme = mothership
 ;--------------------- regions -----------------------------
 regions[top_bar]        = top bar
-regions[node_top]       = node top
+regions[page_top]       = page top
 regions[node_bottom]    = node bottom
 regions[content_bottom] = content bottom
-regions[node_region_one] = node region one
-regions[node_region_two] = node region two
 regions[right]          = right sidebar
 regions[footer]         = footer
 

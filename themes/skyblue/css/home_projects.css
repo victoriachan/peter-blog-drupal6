@@ -22,45 +22,56 @@ h1.title {
 .view-projects {
   overflow:hidden;
 }
-  .view-projects .views-row-odd,
-  .view-projects .views-row-even {
+  .view-projects .attachment-before {
+    width:100%;
+  }
+  .view-projects ul {
+    margin:0;
+    padding:0;
+  }
+  .view-projects li.views-row-odd,
+  .view-projects li.views-row-even {
     width:29%;
     float:left;
     margin:20px 0;
+    padding:0;
+    list-style-image:none;
+    list-style-type:none;
+    background-image:none;
   }
-    .view-projects .views-row-1,
-    .view-projects .views-row-4,
-    .view-projects .views-row-7,
-    .view-projects .views-row-10,
-    .view-projects .views-row-13 {
+    .view-projects li.views-row-1,
+    .view-projects li.views-row-4,
+    .view-projects li.views-row-7,
+    .view-projects li.views-row-10,
+    .view-projects li.views-row-13 {
       clear:both;
       margin-right:6.5%;
     }  
-    .view-projects .views-row-3,
-    .view-projects .views-row-6,
-    .view-projects .views-row-9,
-    .view-projects .views-row-12 {
+    .view-projects li.views-row-3,
+    .view-projects li.views-row-6,
+    .view-projects li.views-row-9,
+    .view-projects li.views-row-12 {
       float:right;
     }
     
-.view-projects .title {
+.view-projects li .title {
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
   font-size:16px;
   line-height:normal;
   margin:0 0 1em 0;
 }
-  .view-projects .title a {
+  .view-projects li .title a {
     display:block;
     text-decoration:none;
     padding:5px 0;
     border-top:4px solid #222;
     border-bottom:1px solid #222;    
   }
-  .view-projects .title a:hover {
+  .view-projects li .title a:hover {
     background-color:#e5e5e5;
     background-color:rgba(0,0,0,0.1);
   }
-.view-projects .field-intro-value {
+.view-projects li .field-intro-value {
   font-family: LatinModernRoman10Regular, "Hoefler Text", "Times New Roman", Times, serif;
   font-size:14px;
   line-height:1.6em;
