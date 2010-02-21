@@ -83,10 +83,11 @@
 /* node content */
 .node blockquote {
   min-height:30px;
-  margin:0 0 20px -10px;
-  padding:10px 30px 10px 100px;
-  background: #e5e5e5 url(../images/blockquote_left.png) no-repeat 0 0;
-  background: rgba(0, 0, 0, 0.1) url(../images/blockquote_left.png) no-repeat 0 0;
+  margin:0 0 20px -6px;
+  padding:10px 30px 10px 85px;
+  background: rgba(0,0,0,0.1) url(../images/blockquote.png) no-repeat 10px 5px;
+  border-left:6px solid rgba(0,0,0,0.3);
+  font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
 }
 .node .node-content blockquote p:last-of-type {
   margin-bottom:0;
