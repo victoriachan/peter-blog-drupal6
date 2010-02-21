@@ -98,6 +98,15 @@ function phptemplate_preprocess_views_view__section_listing(&$vars) {
   }
 }
 
+function phptemplate_preprocess_views_view__archive(&$vars) {
+  if ($vars['view']->current_display == 'page_1') {
+    drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+    drupal_add_css(path_to_theme() . '/css/home_blog.css', 'theme');
+  } elseif ($vars['view']->current_display == 'page_2') {
+    drupal_add_css(path_to_theme() . '/css/home_zi.css', 'theme');
+  }
+}
+
 /**
  * implementation of template_preprocess_book_navigation
  */

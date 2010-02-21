@@ -5,13 +5,17 @@ h1.title {
   margin-top:0;
   line-height:normal;
 }
+  h1.title span {
+    font-size:0.5em;
+    display:block;
+  }
 
 /* list */
-.view-section-listing  ul.item-list-list {
+#page-content .view ul.item-list-list {
   margin:0;
   padding:0;
 }
-  .view-section-listing li.item-list-row {
+  #page-content .view li.item-list-row {
     margin:0 0 30px 0;
     padding:0;
     list-style-image:none;
