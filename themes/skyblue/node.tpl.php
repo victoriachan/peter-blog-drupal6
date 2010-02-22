@@ -95,7 +95,7 @@
   <div class="node-content">
     <?php print $content; ?>
   </div>
-      
+
   <?php 
   /**
    * node_bottom
@@ -108,19 +108,28 @@
     <?php print $links; ?>
   <?php endif; ?>
   
+  <!-- Teasers -->
   <?php if (!$page): ?>
-  <div class="comments">
-    <?php print $links; ?>
-  </div>
+    <div class="comments">
+      <?php print $links; ?>
+    </div>
+  <?php endif; ?>
+  
+  <!-- Taxonomy -->
+  <?php if ($terms && (!$page || ($node->type == 'blog'))): ?>
+    <div class="terms">
+      <h3><?php print t('Topics:'); ?></h3> 
+      <?php print $terms; ?>
+    </div>
   <?php endif; ?>  
+    
 </div> <!-- /node -->
 
 
-
-<?php if ($terms && ($type != 'blog')): ?>
-<?php if ($page): ?><hr class="end-node" /><?php endif; ?>
-<div class="terms">
-  <h3><?php print t('Topics:'); ?></h3> 
-  <?php print $terms; ?>
-</div>
+<?php if ($terms && $page && ($node->type != 'blog')): ?>
+  <hr class="end-node" />
+  <div class="terms">
+    <h3><?php print t('Topics:'); ?></h3> 
+    <?php print $terms; ?>
+  </div>
 <?php endif; ?>
