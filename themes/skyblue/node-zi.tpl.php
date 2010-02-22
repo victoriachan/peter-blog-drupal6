@@ -66,8 +66,6 @@
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 
-  <?php print $picture; ?>
-  
   <?php 
     // Custom for zi
     if ($blog_date): ?>

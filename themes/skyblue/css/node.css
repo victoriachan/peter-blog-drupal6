@@ -50,11 +50,10 @@
 }
   .field-animal-picture {
     position:absolute;
-    top:200px;
-    right:-264px;
+    right:0px;
     z-index:1;
   }
-    .node .node-content .field-animal-picture img {
+    .field-animal-picture img {
       border:0;
     }
 

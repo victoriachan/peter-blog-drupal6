@@ -80,7 +80,7 @@ function phptemplate_preprocess_node(&$vars) {
 
     // To access regions in nodes
     $vars['node_bottom'] = theme('blocks', 'node_bottom');
-
+    
     // Add css for node pages
     drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
     drupal_add_css(path_to_theme() . '/css/comments.css', 'theme');

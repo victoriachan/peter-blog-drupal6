@@ -70,8 +70,6 @@
   
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
 
-  <?php print $picture; ?>
-  
   <?php if ((!$page) && $blog_date): ?>
     <p class="post-date"><?php print $blog_date; ?></p>
   <?php endif; ?>

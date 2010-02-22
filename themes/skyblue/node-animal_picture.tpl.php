@@ -61,7 +61,7 @@
 ?>
 
 <?php if (!$page): ?>
-  <?php print theme_image($field_animal[0]['filepath'], $title); ?>
+  <div class="field-animal-picture"><?php print theme_image($field_animal[0]['filepath'], $title); ?></div>
 <?php else: ?>
   
   <?php if ($video): ?>
@@ -73,8 +73,6 @@
   <?php endif; ?>
   
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>">
-
-    <?php print $picture; ?>
 
     <h1 class="title"><?php print $title; ?></h1>
 
