@@ -154,23 +154,17 @@ function phptemplate_preprocess_comment_wrapper(&$vars) {
     $vars['has_comments'] = TRUE;
   }
 }
+
 /**
-* function to overwrite links. removes the reply link per node type
-*
-* @param $links
-* @param $attributes
-* @return unknown_type
-*/
-// Can't name as phptemplate_links() as mothership is using that
-//function phptemplate_links($links, $attributes = array('class' => 'links')) {
-//  
-//  // Link 'Add a comment' link to node page instead of comments reply page
-//  if($links['comment_add']['href']){
-//    $arr_linkparts = explode('/', $links['comment_add']['href']);
-//    $links['comment_add']['href'] = 'node/'.$arr_linkparts[2];
-//  }
-//  // Don't show 'reply' link for comments
-//  unset($links['comment_reply']);
-//  
-//  return theme_links($links, $attributes);
-//}
+ * Implementation of hook_link_alter() for node_link() in node module to always show 'Read More' link.
+ */
+function node_link_alter(&$links, $node) {
+  // Use 'Read more »' instead of 'Read more'
+  if (isset($links['node_read_more'])) {
+    $links['node_read_more']['title'] = t('Read more »');
+  }
+  // Don't show add new comment link
+  if (isset($links['comment_add'])) {
+    unset($links['comment_add']);
+  }
+}

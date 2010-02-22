@@ -110,7 +110,7 @@
   #block-views-node-content-block-2 h3 a,
   #block-views-archive-block-1 h3 a,
   #block-views-archive-block-2 h3 a {
-    font-size:1.2em;
+    font-size:1.1em;
     text-decoration:none;
     display:block;
     width:auto;
@@ -184,7 +184,6 @@
     .node-teaser .comments ul.links a {
       text-decoration:none;
       padding:5px;
-      font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
       text-decoration:none;
       font-size:13px;
       font-weight:bold;
@@ -234,15 +233,14 @@
 .node .terms {
   padding:3px 0 4px 0;
   margin:10px 0 0 0;
-  border-top:1px solid #ccc;
-  border-bottom:1px solid #ccc;
+  background-color:#efefef;
 }
   .node-teaser .terms h3,    
   .node .terms h3 {
     display:inline;
     font-size:1em;
     line-height:normal;
-    color:#AFAFAF;
+    color:#999;
   }
   .node-teaser .terms ul,    
   .node .terms ul {
@@ -259,7 +257,7 @@
   .node-teaser .terms ul.links li a,
   .node .terms ul.links li a {
     padding:0 5px 0 0;
-    color:#999;
+    color:#666;
     background-color:transparent;
     text-decoration:underline;
   }
