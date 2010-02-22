@@ -291,3 +291,6 @@ p.code, ol.code, ul.code{
   background-color:#FBED73;
   padding:0 3px;
 }
+span.pinyin {
+  font-family: "Lucida Sans Unicode", "Times New Roman", Arial; 
+}
