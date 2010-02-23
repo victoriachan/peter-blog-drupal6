@@ -27,11 +27,11 @@
   z-index:2;
 }
 
-  .node-body a {
+  .node .node-body a {
     text-decoration:none;
     background-color:#D1DCDF;
   }
-    .node-body a:hover {
+    .node .node-body a:hover {
       background-color:#333;
       color:#fff;
     }
@@ -238,15 +238,19 @@
   .node .terms h3 {
     display:inline;
     font-size:1em;
-    line-height:normal;
+    line-height:1.1em;
+    padding-left:5px;
     color:#999;
+    text-transform:uppercase;
+    font-weight:normal;
   }
   .node-teaser .terms ul,    
   .node .terms ul {
     margin:0;
-    padding:0 0 0 10px;
+    padding:0 0 0 7px;
     line-height:normal;
     font-size:0.9em;
+    line-height:1.3em;
     font-style:italic;
   }  
   .node-teaser .terms ul.links li,
@@ -255,12 +259,12 @@
   }
   .node-teaser .terms ul.links li a,
   .node .terms ul.links li a {
-    padding:0 5px 0 0;
-    color:#666;
+    padding:0 7px 0 0;
+    color:#999;
     background-color:transparent;
-    text-decoration:underline;
+    text-decoration:none;
   }
   .node-teaser .terms ul.links li a:hover,
   .node .terms ul.links li a:hover {
-    text-decoration:none;
+    text-decoration:underline;
   }
