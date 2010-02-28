@@ -92,6 +92,16 @@
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
   letter-spacing:0.04em;
 }
+.node .node-body blockquote a,
+.node blockquote a {
+  background-color:transparent;
+  padding:0;
+  text-decoration:underline;
+}
+  .node .node-body blockquote a:hover,
+  .node blockquote a:hover {
+    text-decoration:none;
+  }
 .node .node-content blockquote p:last-of-type {
   margin-bottom:0;
   padding-bottom:0;
@@ -271,3 +281,10 @@
   .node .terms ul.links li a:hover {
     text-decoration:underline;
   }
+
+.node .terms {
+  margin:10px 0;
+}
+.node .terms {
+  font-size:1em;
+}

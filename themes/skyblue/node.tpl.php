@@ -77,6 +77,7 @@
   <?php if ($page): ?>
     <h1 class="title"><?php print $title; ?></h1>
   <?php else: ?>
+    <?php if($node->type == 'project'){ print '<div class="project-subtitle">Project:</div>'; }; ?>
     <h2 class="title">
       <a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a>
     </h2>
@@ -91,7 +92,11 @@
   <?php endif; ?>
   
   <div class="node-content">
-    <?php print $content; ?>
+    <?php if((!$page) && $node->type == 'project'): ?>
+      <?php print $field_intro[0]['safe']; ?>
+    <?php else: ?>  
+      <?php print $content; ?>
+    <?php endif; ?>
   </div>
 
   <?php 

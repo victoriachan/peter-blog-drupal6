@@ -142,6 +142,11 @@ function phptemplate_preprocess_views_view__archive(&$vars) {
   }
 }
 
+function phptemplate_preprocess_views_view__taxonomy_term(&$vars) {
+  drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+  drupal_add_css(path_to_theme() . '/css/topics.css', 'theme');
+}
+
 /**
  * implementation of template_preprocess_book_navigation
  */
