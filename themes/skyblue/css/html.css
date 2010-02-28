@@ -288,8 +288,8 @@ p.code, ol.code, ul.code{
   line-height:normal;
 }
 .highlight{
-  background-color:#FBED73;
-  padding:0 3px;
+  font-size:1.1em;
+  font-weight:bold;
 }
 span.pinyin {
   font-family: "Lucida Sans Unicode", "Times New Roman", Arial; 

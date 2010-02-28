@@ -29,7 +29,8 @@
 
   .node .node-body a {
     text-decoration:none;
-    background-color:#D1DCDF;
+    background-color:#69B6FA;
+    background-color:rgba(105,182,250,0.4);
   }
   .node-teaser .node-body a {
     color:inherit;
