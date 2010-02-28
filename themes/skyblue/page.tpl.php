@@ -50,7 +50,6 @@
         </div><!-- /.content_top -->
         
         <div id="page-content" class="page-content">
-          <?php print $page_top; ?>
           <?php print $content; ?>
         </div><!-- /.content -->
         

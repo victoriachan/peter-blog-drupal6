@@ -247,6 +247,7 @@
   padding:3px 0 4px 0;
   margin:10px 0 0 0;
   background-color:#efefef;
+  background-color:rgba(100,100,100,0.1);
 }
   .node-teaser .terms h3,    
   .node .terms h3 {

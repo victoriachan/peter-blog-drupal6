@@ -97,14 +97,6 @@
   <div class="node-content">
     <?php print $content; ?>
   </div>
-      
-  <?php 
-  /**
-   * node_bottom
-   */ 
-  if ($page && $node_bottom): ?>
-    <?php print $node_bottom; ?>
-  <?php endif; ?>
     
   <?php if ($page): ?>
     <?php print $links; ?>

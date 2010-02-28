@@ -8,8 +8,8 @@
         <!-- REGION content_bottom -->
         <?php print $content_bottom; ?>
       </div></div> <!-- /.content-bottom -->
-    <?php endif; ?> 
- 
+    <?php endif; ?>
+     
     <?php if ($footer || $footer_message): ?>
     <div id="footer" class="footer">
       <div class="inner">

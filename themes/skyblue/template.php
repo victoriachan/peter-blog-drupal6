@@ -103,45 +103,51 @@ function phptemplate_preprocess_page(&$vars) {
 }
 
 function phptemplate_preprocess_node(&$vars) {
-
-  // Format nice blog dates
-  $vars['blog_date'] = format_date($vars['node']->created, 'large'); 
   
-  if ($vars['page']) {
-
-    // To access regions in nodes
-    $vars['node_bottom'] = theme('blocks', 'node_bottom');
+  if ($vars['is_front']) {
+    // This is homepage
+    drupal_add_css(path_to_theme() . '/css/homepage.css', 'theme');
     
-    // Add css for node pages
-    drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
-    drupal_add_css(path_to_theme() . '/css/comments.css', 'theme');
-    drupal_add_css(path_to_theme() . '/css/syntax_highlighting.css', 'theme');
+  } else {
+    
+    // Format nice blog dates
+    $vars['blog_date'] = format_date($vars['node']->created, 'large'); 
   
-    // Handle specific node types
-    if ($vars['node']->type == 'blog') {
+    if ($vars['page']) {
+
+      // To access regions in nodes
+      //$vars['node_bottom'] = theme('blocks', 'node_bottom');
+    
+      // Add css for node pages
+      drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+      drupal_add_css(path_to_theme() . '/css/comments.css', 'theme');
+      drupal_add_css(path_to_theme() . '/css/syntax_highlighting.css', 'theme');
+  
+      // Handle specific node types
+      if ($vars['node']->type == 'blog') {
       
-    } elseif ($vars['node']->type == 'update') {
-      drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
-      drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
-      drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->book['bid']);
+      } elseif ($vars['node']->type == 'update') {
+        drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
+        drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
+        drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->book['bid']);
     
-    } elseif ($vars['node']->type == 'project') {
-      drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
-      drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
-      drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->nid);
-      $vars['blog_date'] = null;
+      } elseif ($vars['node']->type == 'project') {
+        drupal_add_css(path_to_theme() . '/css/book.css', 'theme');
+        drupal_add_css(path_to_theme() . '/css/node_project.css', 'theme');
+        drupal_add_feed('/project_feed/rss.xml?project_id='.$vars['node']->nid);
+        $vars['blog_date'] = null;
     
-    } elseif ($vars['node']->type == 'zi') {
-      drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
+      } elseif ($vars['node']->type == 'zi') {
+        drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
+      }
+    
     }
-    
-  }
   
-  // different date for zi
-  if ($vars['node']->type == 'zi') {
-    $vars['blog_date'] = format_date_parts($vars['node']->created);
+    // different date for zi
+    if ($vars['node']->type == 'zi') {
+      $vars['blog_date'] = format_date_parts($vars['node']->created);
+    }    
   }
-  
 }
 
 /**

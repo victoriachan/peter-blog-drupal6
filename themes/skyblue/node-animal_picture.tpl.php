@@ -101,14 +101,7 @@
       <?php print $terms; ?>
     </div>
     <?php endif; ?>
-  
-    <?php 
-    /**
-     * node_bottom
-     */ 
-    if ($page && $node_bottom): ?>
-      <?php print $node_bottom; ?>
-    <?php endif; ?>
+
   </div> <!-- /node -->
 
   <?php if ($page): ?>

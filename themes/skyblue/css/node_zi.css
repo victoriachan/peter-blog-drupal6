@@ -1,5 +1,9 @@
 /* Zi styles */
 
+body.page-node #admin-tabs-top ul.primary {
+  top:17px;
+}
+  
 .node h1.title,
 .node-teaser h2.title {
   font-size:4em;

@@ -391,12 +391,12 @@ body.user-edit #admin-tabs-top {
   #admin-tabs-top .messages ul li {
     list-style-image:url(../images/icons/square_bullet_white.png);
   }
-#admin-tabs-top ul.primary{
+#admin-tabs-top ul.primary {
   border-bottom:0;
   margin:0 0 0 5px;
   padding:0;
   height:20px;
-  top:16px;
+  top:22px;
   position:absolute;
   z-index:2;
 }
