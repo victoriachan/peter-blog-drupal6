@@ -216,7 +216,7 @@ dl { }
    */
 .default-link,
 a {
-  color:#000;
+  color:#222;
   text-decoration:underline;
 }
   a:hover,

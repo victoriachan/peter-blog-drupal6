@@ -43,7 +43,7 @@
         <?php endif; ?>
       </div><!-- /.content_top -->
       
-      <?php if ($right): ?>
+      <?php if ((1==2) && $right): ?>
         <div class="secondary-content">
           <?php print $right; ?>
         </div><!-- /#secondary_content -->

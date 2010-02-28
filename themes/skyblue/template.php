@@ -154,7 +154,9 @@ function phptemplate_preprocess_node(&$vars) {
  * Implementation of template_preprocess_views_view
  */
 function phptemplate_preprocess_views_view__projects(&$vars) {
-  drupal_add_css(path_to_theme() . '/css/home_projects.css', 'theme');
+  if ($vars['view']->current_display == 'page_1') {
+    drupal_add_css(path_to_theme() . '/css/home_projects.css', 'theme');
+  }
 }
 
 function phptemplate_preprocess_views_view__section_listing(&$vars) {
