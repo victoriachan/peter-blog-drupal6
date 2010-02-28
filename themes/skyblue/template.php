@@ -19,7 +19,7 @@ function _make_tag_cloud($result, $max_count=15) {
       if ($value->term_node_count_node_count > 1) {
         $options['attributes']['title'] .= 's';
       }
-      $options['attributes']['title'] = t($options['attributes']['title'].' about '. $value->term_data_name);
+      $options['attributes']['title'] = t($options['attributes']['title'].' on '. $value->term_data_name);
       
       // cap the max count at 10
       if ($count > $max_count ) {
