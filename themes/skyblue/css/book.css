@@ -8,7 +8,7 @@
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
   font-size:16px;
 }  
-#block-peter-custom-book h3 a {
+#block-peter-custom-book h2 a {
   font-family: 'NotethisRegular', Georgia, "Times New Roman", Times, serif;
   font-size:1.1em;
   line-height:1em;
@@ -22,13 +22,13 @@
   -moz-transform: rotate(-1deg) ;
   transform: rotate(-1deg) ;
 }
-  #block-peter-custom-book h3 a:hover {
+  #block-peter-custom-book h2 a:hover {
     text-decoration:none;
     background-color:#222;
     color:#fff;
   }
 
-body.node-type-project #block-peter-custom-book h3 {
+body.node-type-project #block-peter-custom-book h2 {
   display:none;
 }
   

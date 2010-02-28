@@ -159,6 +159,13 @@ h2.title a {
       text-decoration:none;
     }
 
+/* Secondary content */
+.secondary-content h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
 /* Search */
 #block-search {
   clear:both;
@@ -177,7 +184,7 @@ h2.title a {
     opacity:1;
   }
   #block-search label,
-  #block-search h3 {
+  #block-search h2 {
     display: none;
   }
   #block-search #edit-search-block-form-1-wrapper {

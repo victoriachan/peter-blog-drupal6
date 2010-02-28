@@ -6,12 +6,14 @@ engine      = phptemplate
 base theme = mothership
 ;--------------------- regions -----------------------------
 regions[top_bar]        = top bar
-;regions[page_top]       = page top
-;regions[node_bottom]    = node bottom
+regions[homepage_row_1] = homepage row 1
+regions[homepage_row_2] = homepage row 2
 regions[content_bottom] = content bottom
 regions[right]          = right sidebar
 regions[footer]         = footer
 
+;regions[page_top]       = page top
+;regions[node_bottom]    = node bottom
 ;--------------------- features ----------------------------
 features[] = logo
 features[] = name

@@ -120,9 +120,9 @@
   font-size:1.1em;
   color:#444;
 }
-  #block-views-node-content-block-2 h3 a,
-  #block-views-archive-block-1 h3 a,
-  #block-views-archive-block-2 h3 a {
+  #block-views-node-content-block-2 h2 a,
+  #block-views-archive-block-1 h2 a,
+  #block-views-archive-block-2 h2 a {
     font-size:1.1em;
     text-decoration:none;
     display:block;
