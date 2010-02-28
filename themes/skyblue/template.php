@@ -5,6 +5,37 @@
  * template file for  subtheme
  */
 
+/**
+ * Take in results of term node count, and return output for tag cloud
+ */
+function _make_tag_cloud($result, $max_count=15) {
+  $terms_output = '';
+  foreach($result as $key => $value) {
+    if ($value->term_node_count_node_count != 0) {
+      
+      $count = $value->term_node_count_node_count;
+      
+      $options['attributes']['title'] = $value->term_node_count_node_count . ' post';
+      if ($value->term_node_count_node_count > 1) {
+        $options['attributes']['title'] .= 's';
+      }
+      $options['attributes']['title'] = t($options['attributes']['title'].' about '. $value->term_data_name);
+      
+      // cap the max count at 10
+      if ($count > $max_count ) {
+        $count = 'max';
+      }
+      $terms_output .= '<li class="count_'.$count.'">';
+      $terms_output .= l(t($value->term_data_name), 'taxonomy/term/'.$value->tid, $options);
+      $terms_output .= '</li>';
+    }
+  }
+  if (strlen($terms_output)) {
+    $terms_output = '<ul>'.$terms_output.'</ul>';
+  }
+  return $terms_output;
+}
+
 function format_date_parts ($date) {
   //assumes $date is d.M.Y
   $date_string = format_date($date, 'custom', 'd.m.Y');
@@ -145,6 +176,15 @@ function phptemplate_preprocess_views_view__archive(&$vars) {
 function phptemplate_preprocess_views_view__taxonomy_term(&$vars) {
   drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
   drupal_add_css(path_to_theme() . '/css/topics.css', 'theme');
+  $vars['title'] = 'asd';
+}
+
+function phptemplate_preprocess_views_view__topics(&$vars) {
+  if ($vars['view']->current_display == 'page_1') {
+    drupal_add_css(path_to_theme() . '/css/node.css', 'theme');
+    drupal_add_css(path_to_theme() . '/css/topics.css', 'theme');
+  }
+  $vars['rows'] = _make_tag_cloud($vars['view']->result);
 }
 
 /**

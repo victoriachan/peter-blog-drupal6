@@ -1,5 +1,18 @@
-/* Taxonomy terms listing */
+/* Taxonomy terms and topics views */
 
+h1 {
+  font-size:5em;
+}
+  h1 .subtitle {
+    margin:10px 0 -5px -10px;
+    font-size:0.3em;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+  }
+  h1 .subtitle:hover {
+    color:#333;
+  }
 .node-teaser {
   clear:both;
   margin-bottom:30px;
@@ -30,45 +43,131 @@
       color:#000;
     }
 
-/* Terms
-.node-teaser .terms,    
-.node .terms {
-  padding:3px 0 4px 0;
-  margin:10px 0 0 0;
-  background-color:#efefef;
+/* Topics tag cloud */
+
+.view-topics {
+  overflow:hidden;
+  width:100%;
+  padding:10px 0;
+  margin:0;
+  font-size:15px;
 }
-  .node-teaser .terms h3,    
-  .node .terms h3 {
-    display:inline;
-    font-size:1em;
-    line-height:1.1em;
-    padding-left:5px;
-    color:#999;
-    text-transform:uppercase;
-    font-weight:normal;
-  }
-  .node-teaser .terms ul,    
-  .node .terms ul {
+  .view-topics .view-content {
+    padding:5px 0 35px 0;
     margin:0;
-    padding:0 0 0 7px;
+  }
+  .view-topics .more-link {
+    clear:both;
+    float:left;
+    margin-left:10px;
+    font-style:italic;  
+  }
+    .view-topics .more-link a {
+      text-decoration:none;
+    }
+    .view-topics .more-link a:hover {
+      text-decoration:underline;
+    }
+.view-topics ul,
+.view-topics li {
+  display:inline;
+  margin:0;
+  padding:0;
+  list-style-image:none;
+  list-style-type:none;
+}
+  .view-topics li {
+    font-size:1em;
     line-height:normal;
-    font-size:0.9em;
-    line-height:1.3em;
-    font-style:italic;
-  }  
-  .node-teaser .terms ul.links li,
-  .node .terms ul.links li {
-    padding:0;
+    float:left; 
+    margin:0.1em 0.15em 0.1em 0.15em;
   }
-  .node-teaser .terms ul.links li a,
-  .node .terms ul.links li a {
-    padding:0 7px 0 0;
-    color:#999;
-    background-color:transparent;
+    .view-topics li.count_2 { font-size:1.3em; }
+    .view-topics li.count_3 { font-size:1.5em; }
+    .view-topics li.count_4 { font-size:1.7em; }
+    .view-topics li.count_5 { font-size:1.9em; }
+    .view-topics li.count_6 { font-size:2.1em; }
+    .view-topics li.count_7 { font-size:2.3em; }
+    .view-topics li.count_8 { font-size:2.5em; }
+    .view-topics li.count_9 { font-size:2.7em; }
+    .view-topics li.count_10 { font-size:2.8em; }
+    .view-topics li.count_11 { font-size:3em; }
+    .view-topics li.count_12 { font-size:3.1em; }
+    .view-topics li.count_13 { font-size:3.2em; }
+    .view-topics li.count_14 { font-size:3.3em; }
+    .view-topics li.count_15 { font-size:3.4em; }
+    .view-topics li.count_max { font-size:3.5em; }
+    
+    .view-topics li:nth-of-type(11),
+    .view-topics li:nth-of-type(2) {
+      -webkit-transform: rotate(2deg) ;
+      -moz-transform: rotate(2deg) ;
+      transform: rotate(2deg) ;
+    }
+    .view-topics li:nth-of-type(1),
+    .view-topics li:nth-of-type(7),
+    .view-topics li:nth-of-type(5) {
+      -webkit-transform: rotate(-2deg) ;
+      -moz-transform: rotate(-2deg) ;
+      transform: rotate(-2deg) ;
+    }
+    .view-topics li:nth-of-type(23),
+    .view-topics li:nth-of-type(8) {
+      -webkit-transform: rotate(1deg) ;
+      -moz-transform: rotate(1deg) ;
+      transform: rotate(1deg) ;
+    }
+    .view-topics li:nth-of-type(3),
+    .view-topics li:nth-of-type(10) {
+      -webkit-transform: rotate(3deg) ;
+      -moz-transform: rotate(3deg) ;
+      transform: rotate(3deg) ;
+    }
+    .view-topics li:nth-of-type(17),
+    .view-topics li:nth-of-type(22) {
+      -webkit-transform: rotate(-3deg) ;
+      -moz-transform: rotate(-3deg) ;
+      transform: rotate(-3deg) ;
+    }
+    .view-topics li:nth-of-type(13),
+    .view-topics li:nth-of-type(15) {
+      -webkit-transform: rotate(2deg) ;
+      -moz-transform: rotate(2deg) ;
+      transform: rotate(2deg) ;
+    }
+    .view-topics li:nth-of-type(13),
+    .view-topics li:nth-of-type(19) {
+      -webkit-transform: rotate(-1deg) ;
+      -moz-transform: rotate(-1deg) ;
+      transform: rotate(-1deg) ;
+    }
+    .view-topics li:nth-of-type(12),
+    .view-topics li:nth-of-type(25) {
+      -webkit-transform: rotate(4deg) ;
+      -moz-transform: rotate(4deg) ;
+      transform: rotate(4deg) ;
+    }          
+  .view-topics li a {
     text-decoration:none;
+    padding:0 0.5em 0.1em 0.5em;
+    background-color:#a69d81;
+    background-color:rgba(0,0,0,0.2);
+    color:#333128;
+    color:rgba(0,0,0,0.7);
   }
-  .node-teaser .terms ul.links li a:hover,
-  .node .terms ul.links li a:hover {
-    text-decoration:underline;
+    .view-topics li a:hover {
+      text-decoration:none;
+      color:#fff;
+      background-color:#222;
+    }
+    
+.secondary-content .view-topics {
+  font-size:12px;
+  margin:0;
+  padding:20px 0 0 0;
+  clear:both;
+}
+  .secondary-content .view-topics li {
+    float:left; 
+    margin:0.2em 0.15em 0.2em 0.15em;
   }
- */
