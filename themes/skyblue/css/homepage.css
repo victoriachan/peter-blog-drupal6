@@ -44,15 +44,23 @@
     line-height:normal;
     color:#fff;
     text-align:right;
-    min-height:80px;
+    height:90px;
+    position:relative;
   }
     #block-views-projects-block-1 h2 {
       font-weight:bold;
       font-size:2.6em;
     }
+    #block-views-section-listing-block-2 h2 {
+      font-family: Kai, STKaiti, NSimSun, MingLiU, Arial, SimHei;
+      font-size:6.5em;
+    }
     .homepage-row h2 a {
       color:#fff;
       text-decoration:none;
+      position:absolute;
+      bottom:0;
+      right:0;
     }
     .homepage-row h2 a:hover {
       color:#222;
