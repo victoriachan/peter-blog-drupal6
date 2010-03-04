@@ -43,11 +43,11 @@
         <?php endif; ?>
       </div><!-- /.content_top -->
       
-      <?php if ((1==2) && $right): ?>
+      <?php if ($right): ?>
         <div class="secondary-content">
           <?php print $right; ?>
         </div><!-- /#secondary_content -->
-      <?php endif; ?>      
+      <?php endif; ?>
       
       <div id="homepage-row-1" class="homepage-row homepage-row-1">
         <?php print $homepage_row_1; ?>
@@ -55,8 +55,7 @@
       <div id="homepage-row-2" class="homepage-row homepage-row-2">
         <?php print $homepage_row_2; ?>
       </div>
-      
-        
+
     </div><!-- /.main_wrapper -->    
   </div><!-- /#site_wrapper -->
   

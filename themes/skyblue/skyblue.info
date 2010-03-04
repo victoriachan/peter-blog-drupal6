@@ -9,6 +9,7 @@ regions[top_bar]        = top bar
 regions[homepage_row_1] = homepage row 1
 regions[homepage_row_2] = homepage row 2
 regions[content_bottom] = content bottom
+regions[side_tab]       = side tab
 regions[right]          = right sidebar
 regions[footer]         = footer
 

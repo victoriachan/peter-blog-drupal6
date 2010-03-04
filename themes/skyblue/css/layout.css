@@ -65,6 +65,29 @@ body {
     float:right;
     z-index:1;
   }
+  
+#side-tab {
+ position:fixed;
+ top:130px;
+ left:0;
+}
+  #side-tab .block,
+  #side-tab p {
+    display:inline;
+    margin:0;
+    padding:0;
+  }
+  #side-tab a {
+    display:block;
+    background:url(../images/contact_me.png) left top no-repeat;
+    width:22px;
+    height:90px;
+    overflow:hidden;
+    text-indent:-1000px;
+  }
+  #side-tab a:hover {
+    background:url(../images/contact_me.png) left bottom no-repeat;
+  }
 
 #content-bottom {
   margin:0 auto 30px 5%;

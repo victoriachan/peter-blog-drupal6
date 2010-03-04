@@ -3,6 +3,10 @@
  * Bottom Content
  */
  ?>
+    <?php if ($side_tab): ?>
+      <div id="side-tab"><?php print $side_tab; ?></div>
+    <?php endif; ?> 
+ 
     <?php if ($content_bottom): ?>
       <div id="content-bottom" class="content-bottom"><div class="inner">
         <!-- REGION content_bottom -->
