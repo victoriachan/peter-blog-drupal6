@@ -139,7 +139,16 @@ function phptemplate_preprocess_node(&$vars) {
     
       } elseif ($vars['node']->type == 'zi') {
         drupal_add_css(path_to_theme() . '/css/node_zi.css', 'theme');
+      
+      } elseif ($vars['node']->type == 'page') {
+        drupal_add_css(path_to_theme() . '/css/node_page.css', 'theme');
+        unset($vars['blog_date']);
+        
+      }  elseif ($vars['node']->type == 'webform') {
+        drupal_add_css(path_to_theme() . '/css/node_page.css', 'theme');
+        unset($vars['blog_date']);
       }
+      
     
     }
   

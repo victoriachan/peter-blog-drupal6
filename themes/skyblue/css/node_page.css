@@ -1,0 +1,27 @@
+/* Page */
+body.page-node #admin-tabs-top ul.primary {
+  top:17px;
+}
+  
+.node h1.title {
+  font-size:6em;
+  padding:0 0 0.2em 0;
+  margin:0;
+  color:#222;
+}
+.page-node .page-content {
+  padding-top:37px;
+}
+
+.node,
+.node-teaser {
+  background:url(../images/tornpaper_bg.png) 0 0 repeat-y;
+  width:510px;
+  padding:25px 40px 10px 45px;
+  -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+  .node-teaser {
+    padding:30px 40px 25px 40px;
+  }
