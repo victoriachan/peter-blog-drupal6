@@ -7,6 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 <head>
   <title><?php print $head_title; ?></title>
+  <meta name="google-site-verification" content="gEQEfVprdzNVoyY8s13rPPvEf-SC8v3aAxknW29p76M" />
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>  
