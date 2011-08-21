@@ -42,14 +42,20 @@ h1.title {
     .view-projects li.views-row-4,
     .view-projects li.views-row-7,
     .view-projects li.views-row-10,
-    .view-projects li.views-row-13 {
+    .view-projects li.views-row-13,
+    .view-projects li.views-row-16,
+    .view-projects li.views-row-19,
+    .view-projects li.views-row-22 {
       clear:both;
       margin-right:6.5%;
     }  
     .view-projects li.views-row-3,
     .view-projects li.views-row-6,
     .view-projects li.views-row-9,
-    .view-projects li.views-row-12 {
+    .view-projects li.views-row-12,
+    .view-projects li.views-row-15,
+    .view-projects li.views-row-18,
+    .view-projects li.views-row-21 {
       float:right;
     }
     
